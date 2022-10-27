@@ -15,56 +15,89 @@
   <body>
     <nav class="navbar">
       <div class="container">
-        <ul class="navbar-list">
-          <li class="navbar-list-item">
-            <a href="#" class="navbar-list-item-link">Сервис</a>
-          </li>
-          <li class="navbar-list-item">
-            <a href="#" class="navbar-list-item-link">Сотрудничество</a>
-          </li>
-          <li class="navbar-list-item">
-            <a href="#" class="navbar-list-item-link">Заказать звонок</a>
-          </li>
-          <ul class="navbar-social-list">
-            <li class="navbar-social-list-item">
-              <svg class="viber-icon">
-                <use href="img/sprite.svg#viber"></use>
-              </svg>
+        <div class="navbar-wrapper">
+          <ul class="navbar-list">
+            <li class="navbar-list-item">
+              <a href="#" class="navbar-list-item-link">Сервис</a>
             </li>
-            <li class="navbar-social-list-item">
-              <svg class="whatsapp-icon">
-                <use href="img/sprite.svg#whatsapp"></use>
-              </svg>
+            <li class="navbar-list-item">
+              <a href="#" class="navbar-list-item-link">Сотрудничество</a>
             </li>
-            <li class="navbar-social-list-item">
-              <svg class="tg-icon">
-                <use href="img/sprite.svg#tg"></use>
-              </svg>
+            <li class="navbar-list-item">
+              <a href="#" class="navbar-list-item-link">Заказать звонок</a>
+            </li>
+            <ul class="navbar-social-list">
+              <li class="navbar-social-list-item">
+                <a href="#" class="viber-link">
+                  <svg class="viber-icon">
+                    <use href="img/sprite.svg#viber"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="navbar-social-list-item">
+                <a href="#" class="whatsapp-link">
+                  <svg class="whatsapp-icon">
+                    <use href="img/sprite.svg#whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="navbar-social-list-item">
+                <a href="#" class="tg-link">
+                  <svg class="tg-icon">
+                    <use href="img/sprite.svg#tg"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <li class="navbar-list-item navbar-phone">
+              <a href="tel:+78005055461" class="navbar-list-item-link navbar-phone-link">+7 (800) 505-54-61</a>
             </li>
           </ul>
-          <li class="navbar-list-item">
-            <a href="tel:+78005055461" class="navbar-list-item-link navbar-phone-link">+7 (800) 505-54-61</a>
-          </li>
-        </ul>
+        </div>
       </div>
       <!-- /.container -->
-      <hr>
+      <hr class="navbar-seporator">
 
       <div class="container">
-        <a href="./" class="logo">Kugoo</a>
-        <button class="button">
-          <div class="button-menu">
-            <div class="button-line"></div>
-            <div class="button-line"></div>
-            <div class="button-line"></div>
-          </div>
-          Каталог
-        </button>
-        <form action="" class="navbar-form"></form>
-          <input type="search" placeholder="Искать самокат KUGO"
-        class="navbar-input">
-          <button type="submit" class="navbar-input-buttom"></button>
-        </form>
+        <div class="navbar-content">
+          <a href="./" class="logo">Kugoo</a>
+
+          <button class="navbar-button">
+            <div class="button-menu">
+              <div class="button-line"></div>
+              <div class="button-line"></div>
+              <div class="button-line button-line-3"></div>
+            </div>
+            <span class="button-text">Каталог</span>
+          </button>
+  
+          <form action="#" class="navbar-form">
+            <input type="search" placeholder="Искать самокат KUGO"
+          class="navbar-input">
+            <button type="submit" class="navbar-input-buttom">
+              <svg class="search-icon">
+                <use href="img/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+          
+          <ul class="shopping-cart-list">
+            <li class="shopping-cart-list-item">
+              <img src="img/icons/balance.svg" alt="balance" class="balance-icon">
+            </li>
+            <li class="shopping-cart-list-item">
+              <svg class="like-icon">
+                <use href="img/sprite.svg#like"></use>
+              </svg>
+            </li>
+            <li class="shopping-cart-list-item">
+              <svg class="shopping-cart-icon">
+                <use href="img/sprite.svg#shopping-cart"></use>
+              </svg>
+              Корзина
+            </li>
+          </ul>
+        </div>
       </div>
       <!-- /.container -->
     </nav>

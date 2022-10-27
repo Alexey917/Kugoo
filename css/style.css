@@ -20,20 +20,30 @@ body {
 .navbar-social-list {
   display: flex;
   align-items: center;
+  margin-left: 0;
   list-style: none;
 }
 
 .viber-icon,
 .whatsapp-icon,
 .tg-icon {
-  width: 12px;
-  height: 12px;
+  width: .75rem;
+  height: .75rem;
+}
+
+.navbar-list-item:not(:last-child) {
+  margin-right: 1.875rem;
+}
+
+.navbar-list-item:nth-child(3) {
+  margin-right: 0;
+  flex-shrink: 0;
 }
 
 .navbar-list-item-link {
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: .75rem;
   line-height: 17px;
   color: #5d6c7b;
   text-decoration: none;
@@ -42,13 +52,139 @@ body {
 .navbar-phone-link {
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 17px;
+  font-size: .75rem;
+  line-height: 1.0625rem;
   color: #282739;
 }
 
+.navbar-social-list {
+  padding-left: 1.875rem;
+}
 
-@media (max-width: 1700px) {
+.navbar-social-list-item:not(:last-child) {
+  margin-right: .5313rem;
+}
+
+.navbar-phone {
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 100%;
+}
+
+.search-icon {
+  width: 1rem;
+  height: 1rem;
+  padding: .75rem;
+}
+
+.balance-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.like-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.shopping-cart-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.navbar-seporator {
+  color: rgba(236, 243, 255, 1);
+  opacity: 0.33;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 2.1875rem;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.6875rem;
+  text-transform: uppercase;
+  color: #282739;
+  text-decoration: none;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 1.8125rem;
+}
+
+.navbar-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7.125rem;
+  margin-right: 1.25rem;
+  padding: .5rem 1.125rem .5625rem .9375rem;
+
+  background: #6f73ee;
+  border: 1.5px solid #6f73ee;
+  border-radius: .3125rem;
+}
+
+.button-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.4375rem;
+  color: #ffffff;
+}
+
+.button-menu {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 1.4375rem;
+  margin-right: .8125rem;
+}
+
+.button-line {
+  width: .8125rem;
+  height: .0313rem;
+  margin-bottom: .1875rem;
+
+  background: #ffffff;
+  border: 0.1px solid #ffffff;
+  border-radius: 20%;
+}
+
+.button-line-3 {
+  width: .4375rem;
+}
+
+.shopping-cart-list {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-form {
+  position:relative;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-input {
+  width: 37.6875rem;
+  border: .0938rem solid #6f73ee;
+  border-radius: 5px;
+}
+
+.navbar-input-buttom {
+  position: absolute;
+}
+
+
+@media (max-width: 1200px) {
   html{
     font-size: 14px;
   }
