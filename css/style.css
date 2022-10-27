@@ -15,6 +15,7 @@ body {
   display: flex;
   align-items: center;
   list-style: none;
+  padding-left: 0;
 }
 
 .navbar-social-list {
@@ -74,7 +75,6 @@ body {
 .search-icon {
   width: 1rem;
   height: 1rem;
-  padding: .75rem;
 }
 
 .balance-icon {
@@ -165,22 +165,61 @@ body {
 .shopping-cart-list {
   display: flex;
   align-items: center;
+  padding-left: 0;
 }
 
 .navbar-form {
   position:relative;
   display: flex;
   align-items: center;
+  margin-right: 2.9375rem;
 }
 
 .navbar-input {
   width: 37.6875rem;
+  padding: .625rem 0 .625rem 0;
   border: .0938rem solid #6f73ee;
   border-radius: 5px;
 }
 
 .navbar-input-buttom {
   position: absolute;
+  padding: .73rem;
+  right: 0;
+  background: #6f73ee;
+  border: .0938rem solid #6f73ee;
+  border-radius: 0rem .3125rem .3125rem 0rem;
+}
+
+.input-navbar-label {
+  position: absolute;
+  padding-left: 1.25rem;
+  left: 0;
+  flex-shrink: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  color: #5d6c7b;
+}
+
+.shopping-cart-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.shopping-cart-list-item {
+  display: flex;
+  align-items: center;
+}
+
+.shopping-cart-list-item:not(:last-child) {
+  margin-right: 1.5625rem;
+}
+
+.shopping-cart-icon {
+  margin-right: .625rem;
 }
 
 
