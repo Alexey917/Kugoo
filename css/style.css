@@ -182,9 +182,14 @@ body {
 
 .navbar-input {
   width: 37.6875rem;
-  padding: .525rem 0 .625rem 0;
+  padding: .525rem 0 .625rem 1.25rem;
   border: .0938rem solid #6f73ee;
   border-radius: 5px;
+}
+
+.navbar-input:focus {
+  
+  outline: 0;
 }
 
 .navbar-input-buttom {
