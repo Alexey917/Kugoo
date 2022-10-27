@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Jost', sans-serif;
+}
+
 .container {
   max-width: 70rem;
   margin: auto;
@@ -22,8 +26,25 @@
 .viber-icon,
 .whatsapp-icon,
 .tg-icon {
-  width: .75rem;
-  height: .75rem;
+  width: 12px;
+  height: 12px;
+}
+
+.navbar-list-item-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: #5d6c7b;
+  text-decoration: none;
+}
+
+.navbar-phone-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  color: #282739;
 }
 
 
