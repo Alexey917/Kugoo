@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 70rem;
+  margin: auto;
+}
+
+.navbar-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar-social-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.viber-icon,
+.whatsapp-icon,
+.tg-icon {
+  width: .75rem;
+  height: .75rem;
+}
+
+
+@media (max-width: 1700px) {
+  html{
+    font-size: 14px;
+  }
+}
