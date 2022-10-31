@@ -435,6 +435,11 @@ body {
   display: none;
 }
 
+.close-icon {
+  display: none;
+  width: 0.8rem;
+  height: 0.8rem;
+}
 
 @media (max-width: 1439px) {
   html{
@@ -558,8 +563,12 @@ body {
     display: none;
   }
 
-  .dropdown-menu {
+  .is-open {
     display: flex;
+  }
+ 
+  .dropdown-list-item-is-open {
+    display: none;
   }
 
   .dropdown-menu-list {
