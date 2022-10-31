@@ -270,9 +270,9 @@ body {
   width: 86.4rem;
   
   background-image: url('../img/header-img.webp');
-  background-size: 68rem;
+  background-size: 74rem;
   background-repeat: no-repeat;
-  background-position: center left 18.2rem;
+  background-position: center left 12.2rem;
   border-radius: .625rem;
   
 }
@@ -427,6 +427,10 @@ body {
   height: 1rem;
 }
 
+.mobile-menu-toggle {
+  display: none;
+}
+
 
 @media (max-width: 1439px) {
   html{
@@ -530,5 +534,105 @@ body {
   .header-content {
     margin-left: -13.5rem;
   }
+  
+}
+
+@media (max-width: 860px) {
+  .shopping-cart-list {
+    display: none;
+  }
+
+  .navbar-content {
+    position: relative;
+  }
+
+  .navbar-wrapper {
+    display: none;
+  }
+
+  .navbar-seporator {
+    display: none;
+  }
+
+  .dropdown-menu-list {
+    position: absolute;
+    display: block;
+    z-index: 2;
+    list-style: none;
+    width: 13.75rem;
+    padding: 0.5rem;
+    background-color: #ffffff;
+    border-radius: .625rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)
+  }
+
+  .dropdown-list-item {
+    padding: .5rem 1.2rem;
+  }
+
+  
+
+  .dropdown-social-list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .dropdown-list-item-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #282739;
+    text-decoration: none;
+  }
+
+  .dropdown-seporator {
+    color: rgba(236, 243, 255, 1);
+    opacity: 0.33;
+  }
+
+  .dropdown-viber-icon,
+  .dropdown-whatsapp-icon,
+  .dropdown-tg-icon {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .dropdown-menu-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    height: 100%;
+    padding: 0.525rem 1.125rem 0.625rem 1.125rem;
+    /*padding: 0.4rem 1.125rem 0.5625rem;*/
+    background: #6f73ee;
+    border: 0.0938rem solid #6f73ee;
+    border-radius: 0.3125rem 0.3125rem 0.3125rem 0.3125rem;
+  }
+
+  .dropdown-menu-line {
+    width: .8125rem;
+    height: .0313rem;
+    margin-bottom: .1875rem;
+
+    background: #ffffff;
+    border: 0.1px solid #ffffff;
+    border-radius: 20%;
+  }
+
+  .navbar-button {
+    display: none;
+  }
+
+  .container {
+    max-width: 45rem;
+  }
+
+  
+  
   
 }
