@@ -431,6 +431,10 @@ body {
   display: none;
 }
 
+.dropdown-menu {
+  display: none;
+}
+
 
 @media (max-width: 1439px) {
   html{
@@ -554,9 +558,17 @@ body {
     display: none;
   }
 
+  .dropdown-menu {
+    display: flex;
+  }
+
   .dropdown-menu-list {
     position: absolute;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 2rem;
+    right: -3rem;
     z-index: 2;
     list-style: none;
     width: 13.75rem;
