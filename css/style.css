@@ -560,6 +560,10 @@ body {
   .header-content {
     width: 33.75em;
   }
+
+  .suitable-modal-content {
+    max-width: 35.3125rem;
+  }
   
 }
 
@@ -581,6 +585,11 @@ body {
 
   .header-content {
     margin-left: -17.5rem;
+  }
+
+  .suitable-modal-content {
+    margin-right: 1.3125rem;
+    max-width: 35.3125rem;
   }
   
 }
@@ -623,6 +632,21 @@ body {
 
   .header-content {
     margin-left: -13.5rem;
+  }
+
+  .suitable-modal-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .suitable-modal-content {
+    margin-right: 0;
+    margin-top: 28rem;
+  }
+
+  .suitable-modal-img {
+    right: 50%;
+    margin-right: -16.1875rem;
   }
   
 }
@@ -772,6 +796,10 @@ body {
   .dropdown-menu-list {
     right: -1rem;
   }
+
+  .suitable-modal-title {
+    font-size: 1.7875rem;
+  }
 }
 
 @media (max-width: 650px) {
@@ -896,6 +924,29 @@ body {
 
   .dropdown-menu-list {
     right: 7.6rem;
+  }
+
+  .suitable-modal-img {
+    width: 28.1875rem;
+    height: 22.375rem;
+    margin-right: -14.375rem;
+  }
+
+  .suitable-modal-title {
+    margin-left: 1rem;
+    font-size: 1.5875rem;
+  }
+
+  .suitable-modal-text {
+    margin-left: 1rem;
+  }
+
+  .suitable-modal-list {
+    margin-left: 1rem;
+  }
+
+  .suitable-modal-content {
+    max-width: 29.3125rem;
   }
 }
 
