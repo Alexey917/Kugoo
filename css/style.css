@@ -569,28 +569,37 @@ body {
     display: flex;
   }
 
-  .dropdown-menu {
-    position: fixed;
+  .dropdown-menu-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 3;
     list-style: none;
-    width: 100%;
-    height: 100%;
+
+    position: absolute;
+    top: 2rem;
+    right: -3rem;
+    z-index: 3;
+    width: 13.75rem;
+
     padding: 0.5rem;
     background-color: #ffffff;
     border-radius: .625rem;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)
   }
 
+  .dropdown-menu-list {
+    
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+  }
+
   .dropdown-list-item {
     padding: .5rem 1.2rem;
+  }
+
+  .dropdown-list-item-input {
+    display: none;
   }
 
   
@@ -677,7 +686,11 @@ body {
   }
 
   .navbar-form {
-    margin-right: 4.9375rem;
+    margin-right: 1.9375rem;
+  }
+
+  .dropdown-menu-list {
+    right: -1rem;
   }
 }
 
@@ -758,4 +771,80 @@ body {
   .header-title {
     font-size: 1.575rem;
   }
+
+  .dropdown-list-item-input {
+    display: flex;
+  }
+
+  .dropdown-form {
+    position:relative;
+    display: flex;
+    align-items: center;
+ 
+  }
+
+  .dropdown-input {
+    width: 10.6875rem;
+    padding: .525rem 0 .625rem 1.25rem;
+    border: .0938rem solid #6f73ee;
+    border-radius: 5px;
+  }
+  
+  .dropdown-input:focus {
+    outline: 0;
+  }
+
+  .input-dropdown-label {
+    position: absolute;
+    padding-left: 1.25rem;
+    left: 0;
+    flex-shrink: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color: #5d6c7b;
+  }
+
+  .navbar-form {
+    display: none;
+  }
+
+  .navbar-content {
+    justify-content: center;
+  }
+
+  .dropdown-menu-list {
+    right: 7.6rem;
+  }
 }
+
+@media (max-width: 410px) {
+  .image-container {
+    max-width: 22.25rem;
+  }
+
+  .header-image {
+    max-width: 22.25rem;
+    background-size: 92rem;
+  }
+
+  .header-content {
+    max-width: 20rem;
+  }
+
+  .header-title {
+    font-size: 1.275rem;
+    line-height: 41px;
+  }
+
+  .header-address-info {
+    flex-wrap: wrap;
+  }
+
+  .schedule {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+  }
+}
+
