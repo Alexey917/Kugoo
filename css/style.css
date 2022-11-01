@@ -443,7 +443,7 @@ body {
 
 .section-suitable-modal {
   position: relative;
-  margin-top: 3.5rem;
+  margin-top: 4.5rem;
 }
 
 .suitable-modal-wrapper {
@@ -466,6 +466,7 @@ body {
 
 .suitable-modal-title {
   margin-bottom: 1.875rem;
+  letter-spacing: 0.1px;
   font-style: normal;
   font-weight: 600;
   font-size: 2.1875rem;
@@ -475,6 +476,7 @@ body {
 }
 
 .suitable-modal-text {
+  margin-left: 0.4rem;
   margin-bottom: 1.125rem;
   font-style: normal;
   font-weight: 500;
@@ -508,6 +510,7 @@ body {
 }
 
 .suitable-modal-list {
+  margin-left: 0.35rem;
   list-style: none;
   padding: 0;
 }
