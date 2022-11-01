@@ -578,7 +578,7 @@ body {
     justify-content: center;
     top: 2rem;
     right: -3rem;
-    z-index: 2;
+    z-index: 3;
     list-style: none;
     width: 13.75rem;
     padding: 0.5rem;
@@ -653,7 +653,63 @@ body {
     max-width: 45rem;
   }
 
-  
-  
-  
+}
+
+@media (max-width: 780px) {
+  .header-content {
+    margin-left: -5.5rem;
+  }
+
+  .image-container {
+    max-width: 44.25rem;
+  }
+
+  .header-image {
+    width: 44.25em;
+    background-size: 82rem;
+    
+  }
+
+  .header-image::before {
+    background: linear-gradient(129.21deg, #6f73ee 17.37%, rgba(111, 115, 238, 0) 67.02%);
+  }
+
+  .navbar-form {
+    margin-right: 4.9375rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .navbar-form {
+    margin-right: 2.9375rem;
+  }
+
+  .logo {
+    font-size: 1.675rem;
+  }
+
+  .navbar-input {
+    width: 20.6875rem;
+  }
+
+  .container {
+    max-width: 36rem;
+  }
+
+  .navbar-input-buttom {
+    width: 10.8%;
+  }
+
+  .image-container {
+    max-width: 36.25rem;
+  }
+
+  .header-image {
+    width: 36.25em;
+    background-size: 82rem;
+  }
+
+  .header-content {
+    margin-left: 3.5rem;
+  }
 }
