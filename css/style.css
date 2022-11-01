@@ -441,6 +441,7 @@ body {
   height: 0.8rem;
 }
 
+
 @media (max-width: 1439px) {
   html{
     font-size: 14px;
@@ -555,6 +556,7 @@ body {
     position: relative;
   }
 
+
   .navbar-wrapper {
     display: none;
   }
@@ -566,21 +568,21 @@ body {
   .is-open {
     display: flex;
   }
- 
-  .dropdown-list-item-is-open {
-    display: none;
-  }
 
-  .dropdown-menu-list {
-    position: absolute;
+  .dropdown-menu {
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    top: 2rem;
-    right: -3rem;
+    
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     z-index: 3;
     list-style: none;
-    width: 13.75rem;
+    width: 100%;
+    height: 100%;
     padding: 0.5rem;
     background-color: #ffffff;
     border-radius: .625rem;
@@ -710,6 +712,50 @@ body {
   }
 
   .header-content {
-    margin-left: 3.5rem;
+    margin-left: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .dropdown-menu-list {
+    right: -1.4rem;
+  }
+}
+
+
+@media (max-width: 550px) {
+  .image-container {
+    max-width: 27.25rem;
+  }
+
+  .header-image {
+    max-width: 27.25rem;
+    background-size: 92rem;
+  }
+
+  .header-content {
+    max-width: 24rem;
+  }
+
+  .logo {
+    font-size: 1.275rem;
+  }
+
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+
+  .results-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .result-list-item {
+    margin-bottom: 1rem;
+  }
+
+  .header-title {
+    font-size: 1.575rem;
   }
 }

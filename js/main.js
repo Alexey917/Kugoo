@@ -5,9 +5,11 @@ const iconToggle = document.querySelector(".dropdown-menu-line");
 const iconToggleTwo = document.querySelector(".dropdown-menu-line-2");
 const iconToggleThree = document.querySelector(".dropdown-menu-line-3");
 const iconClose = document.querySelector(".close-icon");
+
 const openMenu = (event) => {
   menu.classList.add("is-open");
   dMenuToggle.classList.add("close-menu");
+  document.body.style.overflow = "hidden;"
   iconToggle.style.display = "none";
   iconToggleTwo.style.display = "none";
   iconToggleThree.style.display = "none";
@@ -17,6 +19,7 @@ const openMenu = (event) => {
 const closeMenu = (event) => {
   menu.classList.remove("is-open");
   dMenuToggle.classList.remove("close-menu");
+  document.body.style.overflow = "hidden;"
   iconToggle.style.display = "block";
   iconToggleTwo.style.display = "block";
   iconToggleThree.style.display = "block";
