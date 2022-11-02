@@ -977,5 +977,34 @@ body {
     margin-top: 1rem;
     margin-left: 1.5rem;
   }
+
+  .suitable-modal-img {
+    width: 22.1875rem;
+    height: 16.375rem;
+    margin-right: -11.375rem;
+  }
+
+  .suitable-modal-img {
+    right: 50%;
+    margin-right: -11.1875rem;
+  }
+
+  .suitable-modal-content {
+    margin-top: 21rem;
+  }
+
+  .suitable-modal-title{
+    font-size: 1.2875rem;
+  }
+
+  .suitable-modal-content {
+    max-width: 22.3125rem;
+  }
+
+  .complete-icon {
+    flex-shrink: 0;
+  }
+
+
 }
 
