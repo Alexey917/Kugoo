@@ -625,10 +625,10 @@ body {
 }
 
 .card-content {
-  display: flex;
+  /*display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 14.3rem;
+  align-items: center;*/
+  margin-top: 15.5rem;
 }
 
 .card-img {
@@ -637,7 +637,7 @@ body {
 }
 
 .card-title {
-  margin-left: -4.45rem;
+  margin-left: 1.8rem;
   margin-top: 1.25rem;
   margin-bottom: -0.5rem;
   font-style: normal;
@@ -709,7 +709,8 @@ body {
 
 .card-feature-list {
   columns: 2 auto;
-  padding-left: 0.5rem;
+  margin-top: 1.1rem;
+  padding-left: 2rem;
   list-style: none;
 }
 
@@ -732,7 +733,7 @@ body {
 .card-price {
   display: flex;
   align-items: center;
-  margin-left: 1.5rem;
+  margin-left: 1.7rem;
 }
 
 .add {
@@ -741,7 +742,8 @@ body {
 }
 
 .price-block {
-  margin-right: 2.25rem;
+  margin-top: -1.6rem;
+  margin-right: 1.8rem;
 }
 
 .mini-price {
@@ -796,8 +798,9 @@ body {
 }
 
 .card-button {
-  margin-top: 1rem;
+  margin-top: -0.3rem;
   margin-bottom: 1.25rem;
+  margin-left: 1.8rem;
   width: 12.875rem;
   padding: .625rem 2.3125rem;
   background: #6f73ee;
