@@ -818,6 +818,30 @@ body {
   color: #FFFFFF;
 }
 
+.section-cta {
+  position: relative;
+  margin-top: 3.1875rem;
+}
+
+.bg-grey {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  max-width: 86.25rem;
+  margin: auto;
+  background: #f4f7fb;
+  border-radius: .625rem;
+}
+
+.cta-img {
+  position: absolute;
+  bottom: 0;
+  right: 11.25rem;
+  max-width: 25.625rem;
+  width: 50%;
+  height: 37.9375rem;
+}
+
 
 @media (max-width: 1439px) {
   html{
