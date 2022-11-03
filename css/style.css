@@ -766,6 +766,10 @@ body {
   color: #282739;
 }
 
+.add {
+  margin-top: -1.1rem;
+}
+
 .add-shopping-cart {
   display: flex;
   align-items: center;
