@@ -586,10 +586,11 @@ body {
 }
 
 .section-available-models {
-  margin-top: 4rem;
+  margin-top: 8rem;
 }
 
 .available-models-title {
+  margin-bottom: 3rem;
   font-style: normal;
   font-weight: 600;
   font-size: 2.1875rem;
@@ -613,7 +614,7 @@ body {
 
 .card {
   position: relative;
-  width: 15.9375rem;
+  width: 16rem;
   text-decoration: none;
   border: 1px solid #eaebed;
   border-radius: .625rem;
@@ -627,17 +628,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 17rem;
+  margin-top: 14.3rem;
 }
 
 .card-img {
   width: 15.9375rem;
+  height: 11.4375rem;
 }
 
 .card-title {
-  margin-left: -3.5rem;
+  margin-left: -4.45rem;
   margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: -0.5rem;
   font-style: normal;
   font-weight: 600;
   font-size: 1.125rem;
@@ -665,9 +667,9 @@ body {
 }
 
 .card-top {
-  margin-top: .625rem;
-  margin-left: .625rem;
-  margin-right: .625rem;
+  margin-top: .325rem;
+  margin-left: .825rem;
+  margin-right: .325rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -707,7 +709,7 @@ body {
 
 .card-feature-list {
   columns: 2 auto;
-  padding-left: 1.5rem;
+  padding-left: 0.5rem;
   list-style: none;
 }
 
@@ -718,6 +720,7 @@ body {
 
 
 .card-feature-text {
+  margin-bottom: 0.4rem;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
