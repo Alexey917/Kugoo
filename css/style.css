@@ -820,7 +820,7 @@ body {
 
 .section-cta {
   position: relative;
-  margin-top: 3.1875rem;
+  margin-top: 6rem;
 }
 
 .bg-grey {
@@ -836,12 +836,159 @@ body {
 .cta-img {
   position: absolute;
   bottom: 0;
-  right: 11.25rem;
+  right: 13rem;
   max-width: 25.625rem;
   width: 50%;
-  height: 37.9375rem;
+  height: 30.9375rem;
 }
 
+.cta-form-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.1875rem;
+  line-height: 3.1875rem;
+  text-transform: uppercase;
+  color: #282739;
+}
+
+.cta-form-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  color: #282739;
+}
+
+.input-cta {
+  width: 16.4375rem;
+  padding: 1.1rem 1.5625rem;
+  background: #ffffff;
+  border: 1px solid #eaebed;
+  border-radius: .3125rem;
+}
+
+.cta-form {
+  position: relative;
+}
+
+label.phone-label {
+  position: absolute;
+  margin-left: -14.8rem;
+  margin-top: 1rem;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4375rem;
+  text-align: center;
+  letter-spacing: 0.155em;
+  color: #5d6c7b;
+}
+
+.input-group-wrapper {
+  margin-top: 1.3rem;
+  margin-bottom: 0.3rem;
+  display: flex;
+  align-items: center;
+}
+
+.label-phone-number {
+  display: none;
+}
+
+.cta-form-button {
+  margin-left: 1.25rem;
+  padding: 1.1rem 1.5625rem;
+  background: #6f73ee;
+  border: none;
+  border-radius: .3125rem;
+  color: #ffffff;
+}
+
+
+.container-label {
+  display: block;
+  position: relative;
+  padding-left: 2.1875rem;
+  margin-bottom: 1.25rem;
+  cursor: pointer;
+  font-size: 1.375rem;
+  user-select: none;
+}
+
+.container-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 5px;
+  left: 6px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  width: 1rem;
+  height: 1rem;
+  margin-left: -0.4rem;
+}
+
+.policy-form-text {
+  font-weight: 400;
+  font-size: .75rem;
+  line-height: .875rem;
+  text-decoration-line: underline;
+  color: #282739;
+}
+
+.container-label input:checked ~ .checkmark {
+  background-color: #1890ff;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container-label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container-label .checkmark:after {
+  left: 4px;
+  top: 0;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.notify-text {
+  margin-left: -0.45rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #282739;
+}
+
+.cta-form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 4.2rem;
+}
+
+.cta-form-wrapper {
+  margin-left: -31.4375rem;
+  margin-top: 5.7rem;
+}
 
 @media (max-width: 1439px) {
   html{
