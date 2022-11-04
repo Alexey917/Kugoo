@@ -926,8 +926,11 @@ label.phone-label {
 
 .checkmark {
   position: absolute;
-  top: 5px;
+  top: 0;
   left: 6px;
+  background-image: url('../img/check.png');
+  background-repeat: no-repeat;
+  background-position: left 2px top 3px;
   background-color: #ffffff;
   border-radius: 2px;
   width: 1rem;
