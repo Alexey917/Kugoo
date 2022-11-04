@@ -1078,6 +1078,10 @@ label.phone-label {
   .section-study-content {
     margin-right: 0.9375rem;
   }
+
+  .bg-grey {
+    max-width: 75.25rem;
+  }
   
 }
 
@@ -1117,6 +1121,37 @@ label.phone-label {
 
   .card:not(:last-child) {
     margin-right: 1.575rem;
+  }
+
+  .cta-form-title {
+    font-size: 1.7875rem;
+  }
+
+  .cta-form-text {
+    font-size: .875rem;
+  }
+
+  .input-group-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .cta-form-button {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .bg-grey {
+    max-width: 65.25rem;
+  }
+
+  .cta-form-wrapper {
+    margin-left: -20.4375rem;
+  }
+
+  .cta-img {
+    right: 9rem;
   }
   
 }
@@ -1189,6 +1224,31 @@ label.phone-label {
     flex-direction: column;
     align-items: center;
   }
+
+  .cta-img {
+    display: none;
+  }
+
+  .cta-form-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .input-group-wrapper {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .cta-form-button {
+    margin-left: 1.25rem;
+  }
+
+  .bg-grey {
+    max-width: 55.25rem;
+  }
+
   
 }
 
@@ -1326,6 +1386,10 @@ label.phone-label {
     font-size: 1.8875rem;
   }
 
+  .bg-grey {
+    max-width: 45rem;
+  }
+
 }
 
 @media (max-width: 780px) {
@@ -1392,6 +1456,24 @@ label.phone-label {
 
   .header-content {
     margin-left: 1.5rem;
+  }
+
+  .bg-grey {
+    max-width: 36rem;
+  }
+
+  .input-group-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .cta-form-button {
+    margin-left: 0;
+  }
+
+  .cta-form-title {
+    font-size: 1.4875rem;
   }
 }
 
@@ -1531,6 +1613,17 @@ label.phone-label {
     font-size: 1.5775rem;
   }
 
+  .bg-grey {
+    max-width: 27.25rem;
+  }
+
+  .input-group-wrapper {
+    align-items: center;
+  }
+
+  .cta-form-title {
+    font-size: 1.2875rem;
+  }
 
 }
 
@@ -1605,6 +1698,20 @@ label.phone-label {
     font-size: 1.2775rem;
   }
 
+  .cta-form-title {
+    font-size: 1.2rem;
+  }
 
+  .cta-form-text {
+    font-size: .775rem;
+  }
+
+  .notify-text {
+    font-size: .6875rem;
+  }
+
+  .bg-grey {
+    max-width: 22.25rem;
+  }
 }
 
