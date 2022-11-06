@@ -993,6 +993,98 @@ label.phone-label {
   margin-top: 5.7rem;
 }
 
+.leave-email {
+  background-color: #6f73ee;
+  margin-bottom: 2.875rem;
+}
+
+.leave-email-title {
+  padding-top: 1.5rem;
+  padding-bottom: 1.3125rem;
+  margin-right: 5.9375rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-form-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group-footer-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.input-footer {
+  width: 25.625rem;
+  padding: .9375rem 1.5625rem;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: .3125rem;
+}
+
+.email-label {
+  position: absolute;
+  margin-left: -24rem;
+  margin-top: .9375rem;
+  margin-bottom: .9375rem;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4375rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer-button {
+  margin-left: 1.25rem;
+  padding: .9375rem 1.5625rem;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4375rem;
+  text-align: center;
+  color: #6f73ee;
+}
+
+.footer {
+  margin-top: 6.25rem;
+}
+
+.footer-info {
+  display: flex;
+  align-items: flex-start;
+}
+
+.catalog-title {
+  margin-bottom: 1.0625rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  color: #282739;
+}
+
+.catalog {
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-item {
+  margin-bottom: .625rem;
+}
+
 @media (max-width: 1439px) {
   html{
     font-size: 14px;
