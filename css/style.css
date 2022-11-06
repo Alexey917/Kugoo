@@ -1056,6 +1056,9 @@ label.phone-label {
   line-height: 1.4375rem;
   text-align: center;
   color: #6f73ee;
+  background: #ffffff;
+  border: none;
+  border-radius: .3125rem;
 }
 
 .footer {
@@ -1077,12 +1080,56 @@ label.phone-label {
 }
 
 .catalog {
+  margin-right: 9.3125rem;
   padding: 0;
   list-style: none;
 }
 
 .catalog-item {
   margin-bottom: .625rem;
+}
+
+.catalog-item-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  color: #5d6c7b;
+  text-decoration: none;
+}
+
+.buyers-title {
+  margin-bottom: 1.0625rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  color: #282739;
+}
+
+.buyers {
+  columns: 2 auto;
+  column-gap: 2.75rem;
+  margin-right: 6.875rem;
+  padding: 0;
+  list-style: none;
+}
+
+.buyers-item {
+  margin-bottom: .625rem;
+}
+
+.buyers-info {
+  margin-top: 1rem;
+}
+
+.buyers-item-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  color: #5d6c7b;
+  text-decoration: none;
 }
 
 @media (max-width: 1439px) {
