@@ -995,13 +995,13 @@ label.phone-label {
 
 .leave-email {
   background-color: #6f73ee;
-  margin-bottom: 2.875rem;
+  margin-bottom: 0.875rem;
 }
 
 .leave-email-title {
-  padding-top: 1.5rem;
-  padding-bottom: 1.3125rem;
-  margin-right: 5.9375rem;
+  margin-top: 1.6rem;
+  margin-left: 0.4rem;
+  margin-right: 7.2rem;
   font-style: normal;
   font-weight: 600;
   font-size: 1.125rem;
@@ -1026,7 +1026,7 @@ label.phone-label {
 
 .input-footer {
   width: 25.625rem;
-  padding: .9375rem 1.5625rem;
+  padding: 1.1rem 1.5625rem;
   background: rgba(255, 255, 255, 0.2);
   border: none;
   border-radius: .3125rem;
@@ -1069,7 +1069,7 @@ label.phone-label {
 .footer-info {
   display: flex;
   align-items: flex-start;
-  padding-bottom: 4.6875rem;
+  padding-bottom: 2.4rem;
 }
 
 .catalog-title {
@@ -1082,7 +1082,8 @@ label.phone-label {
 }
 
 .catalog {
-  margin-right: 8rem;
+  margin-right: 7rem;
+  margin-left: 0.2rem;
   padding: 0;
   list-style: none;
 }
@@ -1112,7 +1113,7 @@ label.phone-label {
 .buyers {
   columns: 2 auto;
   column-gap: 2.75rem;
-  margin-right: 6.875rem;
+  margin-right: 6rem;
   padding: 0;
   list-style: none;
 }
@@ -1123,6 +1124,7 @@ label.phone-label {
 
 .buyers-info {
   margin-top: 1rem;
+  margin-left: 0.9rem;
 }
 
 .buyers-item-link {
@@ -1145,6 +1147,7 @@ label.phone-label {
 }
 
 .contacts-title {
+  margin-bottom: 1rem;
   font-style: normal;
   font-weight: 500;
   font-size: 1.125rem;
@@ -1157,7 +1160,7 @@ label.phone-label {
 }
 
 .contacts-item {
-  margin-bottom: .4375rem;
+  margin-bottom: .1375rem;
 }
 
 .contacts-item-link {
@@ -1185,12 +1188,12 @@ label.phone-label {
 }
 
 .request-a-call {
-  margin-top: 2rem;
+  margin-top: 2.3rem;
 }
 
 .request-a-call-link {
   font-style: normal;
-  font-size: .75rem;
+  font-size: .8rem;
   line-height: 1.0625rem;
   color: #6f73ee;
   text-decoration: none;
@@ -1219,8 +1222,9 @@ label.phone-label {
 }
 
 .footer-info-social {
-  margin-top: 2.25rem;
-  margin-bottom: 2.125rem;
+  margin-top: 2.1rem;
+  margin-bottom: 2rem;
+  margin-left: 0.3rem;
 }
 
 .footer-info-social-list {
@@ -1256,6 +1260,8 @@ label.phone-label {
   display: flex;
   align-items: center;
   list-style: none;
+  margin-top: -0.6rem;
+  margin-left: 0.3rem;
   padding: 0;
 }
 
@@ -1276,7 +1282,8 @@ label.phone-label {
   display: flex;
   align-items: center;
   list-style: none;
-  margin-left: 21.9375rem;
+  margin-left: 20.9375rem;
+  margin-top: -0.3rem;
   padding: 0;
 }
 
@@ -1287,9 +1294,11 @@ label.phone-label {
 .online-chat {
   display: flex;
   align-items: center;
+  margin-left: 1.7rem;
 }
 
 .online-chat-text {
+  margin-top: -1.3rem;
   font-style: normal;
   font-weight: 400;
   font-size: .875rem;
@@ -1297,9 +1306,23 @@ label.phone-label {
   color: #282739;
 }
 
+
 .footer-bottom-social-list {
-  margin-left: .9375rem;
+  padding-left: 1rem;
+  margin-top: 0;
 }
+
+.footer-bottom-social-list-item:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.viber-icon-footer,
+.whatsapp-icon-footer,
+.tg-icon-footer {
+  width: 1rem;
+  height: 1rem;
+}
+
 
 @media (max-width: 1439px) {
   html{
