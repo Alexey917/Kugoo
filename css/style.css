@@ -1484,7 +1484,54 @@ label.phone-label {
   .cta-img {
     right: 9rem;
   }
+
+  .footer-form-wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
   
+  .leave-email-title {
+    margin-right: 0;
+  }
+
+  .footer-form {
+    margin-bottom: 1.6rem;
+  }
+
+  .footer-info {
+    flex-wrap: wrap;
+  }
+
+  .catalog {
+    margin-right: 17rem;
+    margin-left: 15.2rem;
+  }
+
+  .contacts-info {
+    margin-left: 15.2rem;
+    margin-right: 1rem;
+  }
+
+  .footer-info-social-list {
+    flex-wrap: wrap;
+    margin-left: 20rem;
+  }
+
+  .info-social-item {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  } 
+
+  .payment-list {
+    margin-left: 0;
+  }
+
+  .online-chat {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1579,7 +1626,45 @@ label.phone-label {
   .bg-grey {
     max-width: 55.25rem;
   }
+  
+  .footer-info {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15rem;
+  }
 
+  .catalog {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .buyers-info {
+    margin-left: 0;
+  }
+
+  .buyers {
+    margin-right: 0;
+  }
+
+  .contacts-info {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .contacts {
+    margin-right: 0;
+  }
+
+  .footer-info-social-list {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15rem;
+  }
+
+  .footer-bottom {
+    align-items: flex-start;
+    margin-left: 15rem;
+  }
   
 }
 
@@ -1805,6 +1890,18 @@ label.phone-label {
 
   .cta-form-title {
     font-size: 1.4875rem;
+  }
+
+  .footer-info {
+    margin-left: 9rem;
+  }
+
+  .footer-info-social-list {
+    margin-left: 9rem;
+  }
+
+  .footer-bottom {
+    margin-left: 9rem;
   }
 }
 
