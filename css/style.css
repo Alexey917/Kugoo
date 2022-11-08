@@ -2053,6 +2053,40 @@ label.phone-label {
     font-size: 1.2875rem;
   }
 
+  .leave-email-title {
+    font-size: 1rem;
+  }
+
+  .input-footer {
+    width: 19.625rem;
+  }
+
+  .email-label {
+    margin-left: -18rem;
+  }
+
+  .footer-info {
+    margin-left: 1.5rem;
+  }
+
+  .footer-info-social-list {
+    margin-left: 1.5rem;
+  }
+
+  .footer-bottom {
+    margin-left: 1.5rem;
+  }
+
+  .input-group-footer-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-button {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
 }
 
 @media (max-width: 410px) {
@@ -2140,6 +2174,10 @@ label.phone-label {
 
   .bg-grey {
     max-width: 22.25rem;
+  }
+
+  .leave-email-title {
+    font-size: 0.9rem;
   }
 }
 
