@@ -1408,7 +1408,7 @@ label.phone-label {
 .modal-input-group {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .modal-form-button {
@@ -1440,8 +1440,8 @@ label.phone-label {
   position: absolute;
   top: .875rem;
   right: .875rem;
-  width: 20px;
-  height: 20px;
+  width: 1.875rem;
+  height: 1.875rem;
 }
 
 @media (max-width: 1439px) {
@@ -1785,6 +1785,15 @@ label.phone-label {
     align-items: flex-start;
     margin-left: 15rem;
   }
+
+  .modal-input-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .modal-form-button {
+    margin-left: 0;
+  }
   
 }
 
@@ -1957,6 +1966,20 @@ label.phone-label {
 
   .suitable-modal-title {
     font-size: 1.7875rem;
+  }
+
+  .modal-image {
+    display: none;
+  }
+
+  .modal-dialog-content {
+    max-width: 20.75rem;
+    margin-right: 2.5rem;
+    padding-left: 1rem;
+  }
+
+  .modal-cta-form-footer {
+    margin-bottom: 1.2rem;
   }
 }
 
@@ -2298,6 +2321,10 @@ label.phone-label {
 
   .leave-email-title {
     font-size: 0.9rem;
+  }
+
+  .modal-dialog-content {
+    max-width: 17.75rem;
   }
 }
 
