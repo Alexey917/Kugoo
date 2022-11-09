@@ -24,7 +24,7 @@
               <a href="#" class="navbar-list-item-link">Сотрудничество</a>
             </li>
             <li class="navbar-list-item">
-              <a href="#" class="navbar-list-item-link">Заказать звонок</a>
+              <a href="#" class="navbar-list-item-link" data-toggle="modal" data-target="#feedback-modal">Заказать звонок</a>
             </li>
             <ul class="navbar-social-list">
               <li class="navbar-social-list-item">
@@ -110,7 +110,7 @@
                 <a href="#" class="dropdown-list-item-link">Сотрудничество</a>
               </li>
               <li class="dropdown-list-item">
-                <a href="#" class="dropdown-list-item-link">Заказать звонок</a>
+                <a href="#" class="dropdown-list-item-link" data-toggle="modal" data-target="#feedback-modal">Заказать звонок</a>
               </li>
               <li class="dropdown-list-item">
                 <a href="tel:+78005055461" class="dropdown-list-item-link">+7 (800) 505-54-61</a>
@@ -219,7 +219,7 @@
                 </li>
               </ul>
     
-              <button class="header-button">
+              <button class="header-button" data-toggle="modal" data-target="#feedback-modal">
                 <span class="header-button-text">Записаться</span>
               </button>
     
@@ -397,7 +397,7 @@
                   </div>
                 </div>
   
-                <button class="card-button">
+                <button class="card-button" data-toggle="modal" data-target="#feedback-modal">
                   <span class="card-button-text">Записаться на тест-драйв</span>
                 </button>
               </div>
@@ -473,7 +473,7 @@
                   </div>
                 </div>
   
-                <button class="card-button">
+                <button class="card-button" data-toggle="modal" data-target="#feedback-modal">
                   <span class="card-button-text">Записаться на тест-драйв</span>
                 </button>
               </div>
@@ -549,7 +549,7 @@
                   </div>
                 </div>
   
-                <button class="card-button">
+                <button class="card-button" data-toggle="modal" data-target="#feedback-modal">
                   <span class="card-button-text">Записаться на тест-драйв</span>
                 </button>
               </div>
@@ -625,7 +625,7 @@
                   </div>
                 </div>
   
-                <button class="card-button">
+                <button class="card-button" data-toggle="modal" data-target="#feedback-modal">
                   <span class="card-button-text">Записаться на тест-драйв</span>
                 </button>
               </div>
@@ -772,7 +772,7 @@
           </div>
 
           <div class="request-a-call">
-            <a href="#" class="request-a-call-link">Заказать звонок</a>
+            <a href="#" class="request-a-call-link" data-toggle="modal" data-target="#feedback-modal">Заказать звонок</a>
           </div>
 
         </div>
@@ -889,6 +889,49 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal" id="feedback-modal">
+      <div class="modal-dialog">
+        <div class="modal-dialog-content">
+          <h2 class="modal-title">Запишитесь на тест-драйв электросамоката</h2>
+        <span class="modal-text-choose-for-yourself">и подберите модель для себя</span>
+        <p class="modal-text-manager">Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.</p>
+        <span class="modal-text-contact">Как с вами удобнее связаться?</span>
+        <form action="handler.php" method="POST" class="cta-form modal-form">
+          <div class="input-group-wrapper modal-input-group">
+            <div class="input-group">
+              <input id="user-phone" type="tel" class="input-cta phone-mask" name="userphone" placeholder=" " maxlength="30" required>
+              <label class="phone-label" for="user-phone">+7 (___) __ - __ - __</label>
+              <label class="phone-label label-phone-number" for="user-phone">Номер телефона</label>
+            </div>
+            <button type="submit" class="cta-form-button modal-form-button">Оставить заявку на тест-драйв</button>
+          </div>
+
+          <div class="cta-form-footer">
+            <label class="container-label">
+              <input type="checkbox" id="terms" required>
+              <span class="checkmark">
+              </span>
+            </label>
+            <p class="modal-notify-text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и
+              <a href="#" class="policy-form-text modal-policy-form-text">политикой конфиденциальности</a>
+          </p>
+          </div>
+          <!-- /.cta-form-footer -->
+          </form>
+        </div>
+        <picture>
+          <source type="image/webp" srcset="img/modal-img.webp">
+          <source type="image/jpeg" srcset="img/modal-img.png">
+          <img  class="modal-image" src="img/modal-img.png" alt="modal-img">
+        </picture>
+        <a href="#" class="modal-close" data-toggle="modal" data-target="#feedback-modal">
+          <svg class="modal-close-icon">
+            <use href="img/sprite.svg#modal-close"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
 
     <script src="js/main.js" ></script>
   </body>
