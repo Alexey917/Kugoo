@@ -68,3 +68,12 @@ modalButtons.forEach((button) => {
   });
 });
 
+/*ловим событие нажатия на кнопку*/ 
+document.addEventListener("keyup", (event) => {
+  /*проверяем, что это кнопка esc и текущее окно открыто*/ 
+  if(event.key == "Escape" && currentModal.classList.contains("modal-is-open")) {
+    /*закрываем текущее окно*/ 
+    currentModal.classList.toggle("modal-is-open");
+  }
+});
+
