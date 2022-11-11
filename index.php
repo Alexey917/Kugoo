@@ -82,9 +82,9 @@
             <span class="button-text">Каталог</span>
           </button>
   
-          <form action="#" class="navbar-form">
+          <form action="handler.php" method="POST" class="navbar-form">
             <input type="search" placeholder=" "
-          class="navbar-input" maxlength="60" id="search">
+          class="navbar-input" maxlength="60" name="searchinput" id="search">
           <label class="input-navbar-label" for="search">Искать самокат KUGO</label>
             <button type="submit" class="navbar-input-buttom">
               <svg class="search-icon">
@@ -96,8 +96,8 @@
           <div class="dropdown-menu">
             <ul class="dropdown-menu-list">
               <li class="dropdown-list-item dropdown-list-item-input">
-                <form action="#" class="dropdown-form">
-                  <input type="search" placeholder=" "
+                <form action="handler.php" method="POST" class="dropdown-form">
+                  <input type="search" name="searchinput" placeholder=" "
                 class="dropdown-input">
                 <label class="input-dropdown-label">Искать..</label>
                 </form>
@@ -661,9 +661,8 @@
             <p class="cta-form-text">Оставьте заявку, и менеджер подберет нужный самокат</p>
             <div class="input-group-wrapper">
               <div class="input-group">
-                <input id="user-phone" type="tel" class="input-cta phone-mask" name="userphone" placeholder=" " maxlength="30" required>
+                <input id="user-phone" type="tel" class="input-cta phone-mask" name="userphone" placeholder=" " maxlength="30">
                 <label class="phone-label" for="user-phone">+7 (___) __ - __ - __</label>
-                <label class="phone-label label-phone-number" for="user-phone">Номер телефона</label>
               </div>
               <button type="submit" class="cta-form-button">Оставить заявку на тест-драйв</button>
             </div>
@@ -911,9 +910,8 @@
         <form action="handler.php" method="POST" class="cta-form modal-form">
           <div class="input-group-wrapper modal-input-group">
             <div class="input-group">
-              <input id="user-phone" type="tel" class="input-cta phone-mask" name="userphone" placeholder=" " maxlength="30" required>
+              <input id="user-phone" type="tel" class="input-cta phone-mask" name="userphone" placeholder=" " maxlength="30">
               <label class="phone-label" for="user-phone">+7 (___) __ - __ - __</label>
-              <label class="phone-label label-phone-number" for="user-phone">Номер телефона</label>
             </div>
             <button type="submit" class="cta-form-button modal-form-button">Оставить заявку на тест-драйв</button>
           </div>
@@ -944,6 +942,7 @@
       </div>
     </div>
 
-    <script src="js/main.js" ></script>
+    <script src="js/just-validate.production.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

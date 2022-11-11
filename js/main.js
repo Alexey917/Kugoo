@@ -77,3 +77,37 @@ document.addEventListener("keyup", (event) => {
   }
 });
 
+const forms = document.querySelectorAll("form");  //собираем все формы
+  forms.forEach((form) => {
+    const validation = new JustValidate(form, {
+      errorFieldCssClass: 'is-invalid',
+  }); 
+  validation
+  .addField("[name=useremail]", [
+    {
+      rule: 'required',
+      errorMessage: 'Укажите телефон',
+    },
+    {
+      rule: 'minLength',
+      value: 11,
+      errorMessage: "Некорректный номер",
+    },
+  ])
+  .addField("name=userphone", [
+    {
+      rule: 'required',
+      errorMessage: 'Укажите телефон',
+    },
+    {
+      rule: 'minLength',
+      value: 11,
+      errorMessage: "Некорректный номер",
+    },
+  ])
+});
+
+
+
+
+
