@@ -82,25 +82,25 @@
             <span class="button-text">Каталог</span>
           </button>
   
-          <form action="handler.php" method="POST" class="navbar-form">
-            <input type="search" placeholder=" "
-          class="navbar-input" maxlength="60" name="searchinput" id="search">
-          <label class="input-navbar-label" for="search">Искать самокат KUGO</label>
+          <div class="navbar-form">
+            <input type="search" placeholder=" " name="search"
+            class="navbar-input" maxlength="60" id="search">
+            <label class="input-navbar-label" for="search">Искать самокат KUGO</label>
             <button type="submit" class="navbar-input-buttom">
               <svg class="search-icon">
                 <use href="img/sprite.svg#search"></use>
               </svg>
             </button>
-          </form>
+          </div>
 
           <div class="dropdown-menu">
             <ul class="dropdown-menu-list">
               <li class="dropdown-list-item dropdown-list-item-input">
-                <form action="handler.php" method="POST" class="dropdown-form">
-                  <input type="search" name="searchinput" placeholder=" "
-                class="dropdown-input">
-                <label class="input-dropdown-label">Искать..</label>
-                </form>
+                <div class="dropdown-form">
+                  <input type="search" placeholder=" " name="search"
+                  class="dropdown-input">
+                  <label class="input-dropdown-label">Искать..</label>
+                </div>
               </li>
               <li class="dropdown-list-item">
                 <a href="#" class="dropdown-list-item-link">Каталог</a>
@@ -656,7 +656,7 @@
         </picture>
         <div class="container">
           <div class="cta-form-wrapper">
-            <form action="handler.php" method="POST" class="cta-form">
+            <form action="handler.php" method="POST" class="cta-form form">
             <h2 class="section-title cta-form-title">Нет нужной модели, которую<br> хотите протестировать?</h2>
             <p class="cta-form-text">Оставьте заявку, и менеджер подберет нужный самокат</p>
             <div class="input-group-wrapper">
@@ -669,7 +669,7 @@
 
             <div class="cta-form-footer">
               <label class="container-label">
-                <input type="checkbox" id="terms" required>
+                <input type="checkbox" id="terms" name="checkbox" required>
                 <span class="checkmark">
                 </span>
               </label>
@@ -694,7 +694,7 @@
             <form action="handler.php" method="POST" class="footer-form">
               <div class="input-group-footer-wrapper">
                 <div class="input-group">
-                  <input id="user-phone" type="tel" class="input-footer" name="useremail" placeholder=" " maxlength="30" required>
+                  <input id="user-email" type="tel" class="input-footer" name="useremail" placeholder=" " maxlength="30" required>
                   <label class="email-label" for="user-email">Введите Ваш email</label>
                 </div>
                 <button type="submit" class="footer-button">Подписаться</button>
@@ -907,7 +907,7 @@
         <span class="modal-text-choose-for-yourself">и подберите модель для себя</span>
         <p class="modal-text-manager">Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.</p>
         <span class="modal-text-contact">Как с вами удобнее связаться?</span>
-        <form action="handler.php" method="POST" class="cta-form modal-form">
+        <form action="handler.php" method="POST" class="cta-form modal-form form">
           <div class="input-group-wrapper modal-input-group">
             <div class="input-group">
               <input id="user-phone" type="tel" class="input-cta phone-mask" name="userphone" placeholder=" " maxlength="30">
@@ -918,7 +918,7 @@
 
           <div class="cta-form-footer modal-cta-form-footer">
             <label class="container-label">
-              <input type="checkbox" id="terms" required>
+              <input type="checkbox" id="terms"  name="checkbox" required>
               <span class="checkmark">
               </span>
             </label>
@@ -927,7 +927,7 @@
           </p>
           </div>
           <!-- /.cta-form-footer -->
-          </form>
+        </form>
         </div>
         <picture>
           <source type="image/webp" srcset="img/modal-img.webp">
