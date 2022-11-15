@@ -86,16 +86,45 @@ const forms = document.querySelectorAll(".form");  //собираем все ф�
   .addField('[name=userphone]', [
     {
       rule: 'required',
-      errorMessage: 'Укажите телефон',
+      errorMessage: 'Укажите номер телефона',
     },
     {
       rule: 'minLength',
       value: 18,
       errorMessage: "Некорректный номер телефона",
     },
-  ])
-  
+  ])  
+  .addField('[name=checkbox]', [
+    {
+      rule: 'required',
+      errorMessage: 'Поставьте галочку',
+    },
+  ])  
 });
+
+const formEmail = document.querySelectorAll(".form-email");  //собираем все формы
+formEmail.forEach((form) => {
+    const validation = new JustValidate(form, {
+      errorFieldCssClass: 'is-invalid',
+  }); 
+  validation
+  .addField('[name=useremail]', [
+    {
+      rule: 'required',
+      errorMessage: 'Укажите почту',
+    },
+    {
+      rule: 'minLength',
+      value: 10,
+      errorMessage: "Как минимум 10 символов",
+    },
+    {
+      rule: "email",
+      errorMessage: "Неверно введена почта",
+    },
+  ])  
+});
+
 
 /* Создаем префикс +7, даже если вводят 8 или 9 */
 const prefixNumber = (str) => {

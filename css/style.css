@@ -1047,6 +1047,7 @@ label.phone-label {
   background: rgba(255, 255, 255, 0.2);
   border: none;
   border-radius: .3125rem;
+  color: #ffffff;
 }
 
 .email-label {
@@ -1470,20 +1471,62 @@ label.phone-label {
   height: 1.875rem;
 }
 
-.input.is-invalid {
-  border: 1px solid red;
+.input-cta.is-invalid {
+  border-color: red;
 }
 
 .just-validate-error-label {
   position: absolute;
-  top: 0;
-  right: 10px;
+  top: 54.5px;
+  right: 7px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: #ffffff;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  display: inline-block;
+  border-radius: .625rem;
+}
+
+.input-footer:focus {
+  border: 2px solid #ffffff;
+  outline: 0;
+}
+
+.input-footer:focus ~ .email-label,
+.input-footer:not(:placeholder-shown).input-footer:not(:focus) ~ .email-label {
+  display: none;
+}
+
+.input-footer.is-invalid {
+  border: 1px solid rgba(255, 224, 0, 1);
+}
+
+.email-label + .just-validate-error-label {
+  position: absolute;
+  top: 64px;
+  right: 7px;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   background-color: inherit;
   transform: translateY(-50%);
   font-size: 0.8rem;
   display: inline-block;
+  border-radius: .625rem;
+  color: rgba(255, 224, 0, 1) !important;
+}
+
+.notify-text + .just-validate-error-label {
+  position: absolute;
+  top: 285px;
+  right: 492px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: inherit;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  display: inline-block;
+  border-radius: .625rem;
 }
 
 @media (max-width: 1439px) {
