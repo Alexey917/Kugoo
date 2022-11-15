@@ -1593,6 +1593,19 @@ input[type=text]::-ms-reveal {  display: none; width : 0;height: 0; }
   .card-button {
     padding: 0.625rem 2.1125rem;
   }
+
+  .just-validate-error-label {
+    top: 49px;
+  }
+
+  .email-label + .just-validate-error-label {
+    top: 56px;
+  }
+
+  .notify-text + .just-validate-error-label {
+    top: 269px;
+    right: 423px;
+  }
 }
 
 @media (max-width: 1250px) {
@@ -1887,6 +1900,11 @@ input[type=text]::-ms-reveal {  display: none; width : 0;height: 0; }
   .modal-form-button {
     margin-left: 0;
   }
+
+  .notify-text + .just-validate-error-label {
+    top: 288px;
+    right: 368px;
+  }
   
 }
 
@@ -2139,6 +2157,11 @@ input[type=text]::-ms-reveal {  display: none; width : 0;height: 0; }
   .footer-bottom {
     margin-left: 9rem;
   }
+
+  .notify-text + .just-validate-error-label {
+    top: 331px;
+    right: 258px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -2330,6 +2353,11 @@ input[type=text]::-ms-reveal {  display: none; width : 0;height: 0; }
     margin-top: 1rem;
   }
 
+  .notify-text + .just-validate-error-label {
+    top: 327px;
+    right: 210px;
+  }
+
 }
 
 @media (max-width: 410px) {
@@ -2426,5 +2454,11 @@ input[type=text]::-ms-reveal {  display: none; width : 0;height: 0; }
   .modal-dialog-content {
     max-width: 17.75rem;
   }
+  
+  .notify-text + .just-validate-error-label {
+    top: 327px;
+    right: 185px;
+  }
+
 }
 
