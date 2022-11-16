@@ -857,7 +857,8 @@ body {
   color: #282739;
 }
 
-.input-cta {
+.input-cta,
+.modal-input {
   width: 16.4375rem;
   padding: 1.1rem 1.5625rem;
   background: #ffffff;
@@ -865,7 +866,8 @@ body {
   border-radius: .3125rem;
 }
 
-.input-cta:focus {
+.input-cta:focus,
+.modal-input:focus {
   border: 2px solid #5f42d6;
   outline: 0;
 }
@@ -880,11 +882,22 @@ body {
   padding: 0 .625rem;
 }
 
+.modal-input:focus ~ .modal-label,
+.modal-input:not(:placeholder-shown).modal-input:not(:focus) ~ .modal-label {
+  margin-top: -0.7rem;
+  margin-left: -15.8rem;
+  font-size: .625rem;
+  background-color: #ffffff;
+  border-radius: .625rem;
+  padding: 0 .625rem;
+}
+
 .cta-form {
   position: relative;
 }
 
-label.phone-label {
+label.phone-label,
+label.modal-label {
   position: absolute;
   margin-left: -14.8rem;
   margin-top: 1rem;
@@ -899,6 +912,7 @@ label.phone-label {
   cursor: text;
   transition: 0.4s;
 }
+
 
 .input-group-wrapper {
   margin-top: 1.3rem;
@@ -1471,7 +1485,8 @@ label.phone-label {
   height: 1.875rem;
 }
 
-.input-cta.is-invalid {
+.input-cta.is-invalid,
+.modal-input.is-invalid {
   border-color: red;
 }
 
@@ -1520,6 +1535,19 @@ label.phone-label {
   position: absolute;
   top: 285px;
   right: 492px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: inherit;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  display: inline-block;
+  border-radius: .625rem;
+}
+
+.modal-notify-text + .just-validate-error-label {
+  position: absolute;
+  top: 150px;
+  right: 186px;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   background-color: inherit;
@@ -1605,6 +1633,11 @@ input[type=text]::-ms-reveal {  display: none; width : 0;height: 0; }
   .notify-text + .just-validate-error-label {
     top: 269px;
     right: 423px;
+  }
+
+  .modal-notify-text + .just-validate-error-label {
+    top: 132px;
+    right: 161px; 
   }
 }
 
@@ -2458,6 +2491,11 @@ input[type=text]::-ms-reveal {  display: none; width : 0;height: 0; }
   .notify-text + .just-validate-error-label {
     top: 327px;
     right: 185px;
+  }
+
+  .modal-notify-text + .just-validate-error-label {
+    top: 129px;
+    right: 132px;
   }
 
 }

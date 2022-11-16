@@ -100,6 +100,23 @@ const forms = document.querySelectorAll(".form");  //собираем все ф�
       errorMessage: 'Поставьте галочку',
     },
   ])  
+  .onSuccess((event) => {
+    const thisForm = event.target;  //определяем нашу форму
+    const formData = new FormData(thisForm); //данные из нашей формы
+    const ajaxSend = (formData) => {
+      fetch(thisForm.getAttribute("action"), {
+        method: thisForm.getAttribute("method"),
+        body: formData,
+      }).then((response) => {
+        if (response.ok) {
+        thisForm.reset();
+        } else {
+          alert("Ошибка. Текст ошибки: ".response.statusText);
+        }
+      });
+    };
+    ajaxSend(formData);
+  });
 });
 
 const formEmail = document.querySelectorAll(".form-email");  //собираем все формы
@@ -123,6 +140,23 @@ formEmail.forEach((form) => {
       errorMessage: "Неверно введена почта",
     },
   ])  
+  .onSuccess((event) => {
+    const thisForm = event.target;  //определяем нашу форму
+    const formData = new FormData(thisForm); //данные из нашей формы
+    const ajaxSend = (formData) => {
+      fetch(thisForm.getAttribute("action"), {
+        method: thisForm.getAttribute("method"),
+        body: formData,
+      }).then((response) => {
+        if (response.ok) {
+        thisForm.reset();
+        } else {
+          alert("Ошибка. Текст ошибки: ".response.statusText);
+        }
+      });
+    };
+    ajaxSend(formData);
+  });
 });
 
 

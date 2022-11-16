@@ -910,8 +910,8 @@
         <form action="handler.php" method="POST" class="cta-form modal-form form">
           <div class="input-group-wrapper modal-input-group">
             <div class="input-group">
-              <input id="user-phone" type="tel" class="input-cta phone-mask" name="userphone" placeholder=" " maxlength="30">
-              <label class="phone-label" for="user-phone">+7 (___) __ - __ - __</label>
+              <input id="user-phone-modal" type="tel" class="modal-input phone-mask" name="userphone" placeholder=" " maxlength="30">
+              <label class="modal-label" for="user-phone-modal">+7 (___) __ - __ - __</label>
             </div>
             <button type="submit" class="cta-form-button modal-form-button">Оставить заявку на тест-драйв</button>
           </div>
