@@ -1,11 +1,11 @@
 <?php
-$user_phone = htmlspecialchars($_POST["userphone"]);
+$user_email = htmlspecialchars($_POST["useremail"]);
 
-$token = "5780567825:AAHzEvu1zlHhpmuzopIjvI2eI9d1YOXQWt4";
+$token = "5751970620:AAHa8zm0oD3wQplXv4T9zfGowQ_TFaNFvdg";
 $chat_id = "-641282664";
 
 $formData = array(
-  "Телефон: " => $user_phone
+  "Почта: " => $user_email,
 );
 
 foreach($formData as $key => $value) {

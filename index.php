@@ -691,7 +691,7 @@
         <div class="container">
           <div class="footer-form-wrapper">
             <h3 class="leave-email-title">Оставьте свою почту и станьте первым,<br> кто получит скидку на новые самокаты</h3>
-            <form action="handler.php" method="POST" class="footer-form form-email">
+            <form action="handler2.php" method="POST" class="footer-form form-email">
               <div class="input-group-footer-wrapper">
                 <div class="input-group">
                   <input id="user-email" type="email" class="input-footer" name="useremail" placeholder=" " maxlength="30">
