@@ -37,6 +37,7 @@ body {
 .tg-icon {
   width: .75rem;
   height: .75rem;
+  fill: #5d6c7b;
 }
 
 .navbar-list-item:not(:last-child) {
@@ -629,7 +630,7 @@ body {
 }
 
 .card-img {
-  width: 15.9375rem;
+  width: 15.8775rem;
   height: 11.4375rem;
 }
 
@@ -786,6 +787,7 @@ body {
 .like-icon-2 {
   width: 1.25rem;
   height: 1.25rem;
+  fill: #6f73ee;
 }
 
 .add-like {
@@ -1567,6 +1569,56 @@ input::-webkit-search-results-decoration { display: none; }
 
 input[type=text]::-ms-clear {  display: none; width : 0;height: 0; }
 input[type=text]::-ms-reveal {  display: none; width : 0;height: 0; }
+
+.icon-fill {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .navbar-list-item-link:hover, 
+  .shopping-cart-list-item-link:hover {
+    color: #8439ff;
+  }
+
+  .viber-icon:hover,
+  .whatsapp-icon:hover,
+  .tg-icon:hover {
+    fill: #8439ff;
+  }
+
+  .navbar-button:hover,
+  .navbar-input-buttom:hover {
+    background-color: #8439ff;
+    border-color: #8439ff;
+  }
+
+  .header-button:hover {
+    border-color:#6f73ee;
+  }
+ 
+  .header-button:hover .header-button-text {
+    color: #8439ff;
+  }
+
+  .card:hover {
+    border-color: #8439ff;;
+  }
+
+  .card-button:hover {
+    background-color: #8439ff;
+  }
+
+  .shopping-cart-2-icon:hover,
+  .like-icon-2:hover {
+    fill: #8439ff;
+  }
+
+  .add-shopping-cart:hover,
+  .add-like:hover {
+    border-color: #8439ff;
+  }
+
+}
 
 @media (max-width: 1439px) {
   html{
