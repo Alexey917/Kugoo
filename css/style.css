@@ -246,12 +246,15 @@ body {
   margin-right: .625rem;
 }
 
-.shopping-cart-list-item-text {
+.shopping-cart-list-item-link {
+  display: flex;
+  align-items: center;
   font-style: normal;
   font-weight: 500;
   font-size: .875rem;
   line-height: 1.25rem;
   color: #282739;
+  text-decoration: none;
 }
 
 .header {
@@ -2016,6 +2019,7 @@ input[type=text]::-ms-reveal {  display: none; width : 0;height: 0; }
   }
 
   .dropdown-seporator {
+    width: 100%;
     color: rgba(236, 243, 255, 1);
     opacity: 0.33;
   }

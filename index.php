@@ -103,40 +103,40 @@
                 </div>
               </li>
               <li class="dropdown-list-item">
-                <a href="#" class="dropdown-list-item-link">Каталог</a>
+                <a href="#" data-toggle="dropdown" class="dropdown-list-item-link">Каталог</a>
               </li>
               <li class="dropdown-list-item">
-                <a href="#" class="dropdown-list-item-link">Баланс</a>
+                <a href="#" data-toggle="dropdown" class="dropdown-list-item-link">Баланс</a>
               </li>
               <li class="dropdown-list-item">
-                <a href="#" class="dropdown-list-item-link">Избранное</a>
+                <a href="#" data-toggle="dropdown" class="dropdown-list-item-link">Избранное</a>
               </li>
               <li class="dropdown-list-item ">
-                <a class="dropdown-list-item-link">Корзина</a>
+                <a href="#" data-toggle="dropdown" class="dropdown-list-item-link">Корзина</a>
               </li>
               <li class="dropdown-list-item">
-                <a href="#" class="dropdown-list-item-link">Сервис</a>
+                <a href="#" data-toggle="dropdown" class="dropdown-list-item-link">Сервис</a>
               </li>
               <li class="dropdown-list-item">
-                <a href="#" class="dropdown-list-item-link">Сотрудничество</a>
+                <a href="#" data-toggle="dropdown" class="dropdown-list-item-link">Сотрудничество</a>
               </li>
               <li class="dropdown-list-item">
-                <a href="#" class="dropdown-list-item-link" data-toggle="modal" data-target="#feedback-modal">Заказать звонок</a>
+                <a href="#" class="dropdown-list-item-link" data-toggle="modal" data-toggle="dropdown" data-target="#feedback-modal">Заказать звонок</a>
               </li>
               <li class="dropdown-list-item">
-                <a href="tel:+78005055461" class="dropdown-list-item-link">+7 (800) 505-54-61</a>
+                <a href="tel:+78005055461" data-toggle="dropdown" class="dropdown-list-item-link">+7 (800) 505-54-61</a>
               </li>
               <hr class="dropdown-seporator">
               <ul class="dropdown-social-list">
                 <li class="dropdown-social-list-item">
-                  <a href="#" class="viber-link">
+                  <a href="#" data-toggle="dropdown" class="viber-link">
                     <svg class="dropdown-viber-icon">
                       <use href="img/sprite.svg#viber"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="dropdown-social-list-item">
-                  <a href="#" class="whatsapp-link">
+                  <a href="#" data-toggle="dropdown" class="whatsapp-link">
                     <svg class="dropdown-whatsapp-icon">
                       <use href="img/sprite.svg#whatsapp"></use>
                     </svg>
@@ -144,7 +144,7 @@
                 </li>
             
                 <li class="dropdown-social-list-item">
-                  <a href="#" class="tg-link">
+                  <a href="#"  data-toggle="dropdown" class="tg-link">
                     <svg class="dropdown-tg-icon">
                       <use href="img/sprite.svg#tg"></use>
                     </svg>
@@ -168,18 +168,24 @@
           
           <ul class="shopping-cart-list">
             <li class="shopping-cart-list-item">
-              <img src="img/icons/balance.svg" alt="balance" class="balance-icon">
+              <a href="#" class="shopping-cart-list-item-link">
+                <img src="img/icons/balance.svg" alt="balance" class="balance-icon">
+              </a>
             </li>
             <li class="shopping-cart-list-item">
-              <svg class="like-icon">
-                <use href="img/sprite.svg#like"></use>
-              </svg>
+              <a href="#" class="shopping-cart-list-item-link">
+                <svg class="like-icon">
+                  <use href="img/sprite.svg#like"></use>
+                </svg>
+              </a>
             </li>
             <li class="shopping-cart-list-item ">
-              <svg class="shopping-cart-icon">
-                <use href="img/sprite.svg#shopping-cart"></use>
-              </svg>
-              <span class="shopping-cart-list-item-text">Корзина</span>
+              <a href="#" class="shopping-cart-list-item-link">
+                <svg class="shopping-cart-icon">
+                  <use href="img/sprite.svg#shopping-cart"></use>
+                </svg>
+                Корзина
+              </a>
             </li>
           </ul>
         </div>
@@ -760,22 +766,22 @@
             <h3 class="contacts-title">Контакты</h3>
             <ul class="contacts">
               <li class="contacts-item">
-                <a href="#" class="contacts-item-link">Call-центр</a>
+                <span class="contacts-item-link">Call-центр</span>
               </li>
               <li class="contacts-item">
                 <a href="tel:+78005055461" class="contacts-item-link contacts-phone">+7 (800) 505-54-61</a>
               </li>
               <li class="contacts-item">
-                <a href="#" class="contacts-item-link contacts-time">Пн-Вс 10:00 - 20:00</a>
+                <span class="contacts-item-link contacts-time">Пн-Вс 10:00 - 20:00</span>
               </li>
               <li class="contacts-item">
-                <a href="#" class="contacts-item-link">Сервисный центр</a>
+                <span class="contacts-item-link">Сервисный центр</span>
               </li>
               <li class="contacts-item">
                 <a href="tel:+74993507692" class="contacts-item-link contacts-phone">+7 (499) 350-76-92</a>
               </li>
               <li class="contacts-item">
-                <a href="#" class="contacts-item-link contacts-time">Пн-Вс 10:00 - 20:00</a>
+                <span class="contacts-item-link contacts-time">Пн-Вс 10:00 - 20:00</span>
               </li>
             </ul>
             <!-- /.contacts -->
