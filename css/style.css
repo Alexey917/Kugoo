@@ -1574,6 +1574,26 @@ input[type=text]::-ms-reveal {  display: none; width : 0;height: 0; }
   display: none;
 }
 
+.icon-fill-2 {
+  display: none;
+}
+
+.icon-remove {
+  display: none;
+}
+
+.icon-remove-like {
+  display: none;
+}
+
+.icon-add {
+  display: block;
+}
+
+.icon-add-like {
+  display: block;
+}
+
 @media (min-width: 992px) {
   .navbar-list-item-link:hover, 
   .shopping-cart-list-item-link:hover {

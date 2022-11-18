@@ -5,9 +5,11 @@ const iconToggle = document.querySelector(".dropdown-menu-line");
 const iconToggleTwo = document.querySelector(".dropdown-menu-line-2");
 const iconToggleThree = document.querySelector(".dropdown-menu-line-3");
 const iconClose = document.querySelector(".close-icon");
+
 const shoppingCart = document.querySelector(".shopping-cart-2-icon");
 const likeIcon = document.querySelector(".like-icon-2");
 const iconFill = document.querySelector(".icon-fill");
+const iconFillTwo = document.querySelector(".icon-fill-2");
 const addLike = document.querySelector(".add-like"); 
 const addShoppingCart = document.querySelector(".add-shopping-cart"); 
 
@@ -49,22 +51,31 @@ dMenuToggle.addEventListener('click', (event) => {
     });
   });
 
-
-  const clickIconToggle = (event) => {
-    shoppingCart.style.display = none;
-    likeIcon.style.display = none;
-    iconFill.style.display = block;
+/* Смена иконок при клике на первой карточке */
+  const clickIconShoppingCartToggle = (event) => {
+    shoppingCart.classList.add("icon-remove");
+    iconFill.classList.add("icon-add");
   }
 
+  const clickIconLikeToggle = (event) => {
+    likeIcon.classList.add("icon-remove-like");
+    iconFillTwo.classList.add("icon-add-like");
+  }
+
+  
   addLike.addEventListener('click', (event) => {
     event.preventDefault();
-    clickIconToggle();
+    clickIconLikeToggle();
   });
+
+
 
   addShoppingCart.addEventListener('click', (event) => {
     event.preventDefault();
-    clickIconToggle();
+    clickIconShoppingCartToggle();
   });
+
+ /* Смена иконок при клике на второй карточке */ 
 
 let currentModal;  //текущее модальное окно
 let modalDialog;   //белое диалоговое окно

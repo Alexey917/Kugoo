@@ -405,7 +405,7 @@
                         <use href="img/sprite.svg#shopping-cart-2"></use>
                       </svg>
                       <svg class="shopping-cart-2-icon icon-fill">
-                        <use href="img/sprite.svg#shopping-cart-fill"></use>
+                        <use href="img/sprite.svg#shopping-cart"></use>
                       </svg>
                     </div>
 
@@ -413,7 +413,7 @@
                       <svg class="like-icon-2">
                         <use href="img/sprite.svg#like-2"></use>
                       </svg>
-                      <svg class="like-icon-2 icon-fill">
+                      <svg class="like-icon-2 icon-fill-2">
                         <use href="img/sprite.svg#like-fill"></use>
                       </svg>
                     </div>
@@ -495,7 +495,7 @@
                       <svg class="like-icon-2">
                         <use href="img/sprite.svg#like-2"></use>
                       </svg>
-                      <svg class="like-icon-2 icon-fill">
+                      <svg class="like-icon-2 icon-fill-2">
                         <use href="img/sprite.svg#like-fill"></use>
                       </svg>
                     </div>
@@ -577,7 +577,7 @@
                       <svg class="like-icon-2">
                         <use href="img/sprite.svg#like-2"></use>
                       </svg>
-                      <svg class="like-icon-2 icon-fill">
+                      <svg class="like-icon-2 icon-fill-2">
                         <use href="img/sprite.svg#like-fill"></use>
                       </svg>
                     </div>
@@ -659,7 +659,7 @@
                       <svg class="like-icon-2">
                         <use href="img/sprite.svg#like-2"></use>
                       </svg>
-                      <svg class="like-icon-2 icon-fill">
+                      <svg class="like-icon-2 icon-fill-2">
                         <use href="img/sprite.svg#like-fill"></use>
                       </svg>
                     </div>
