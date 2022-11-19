@@ -6,10 +6,14 @@ const iconToggleTwo = document.querySelector(".dropdown-menu-line-2");
 const iconToggleThree = document.querySelector(".dropdown-menu-line-3");
 const iconClose = document.querySelector(".close-icon");
 
-const shoppingCart = document.querySelector(".shopping-cart-2-icon");
-const likeIcon = document.querySelector(".like-icon-2");
-const iconFill = document.querySelector(".icon-fill");
-const iconFillTwo = document.querySelector(".icon-fill-2");
+const addButtonsLike = document.querySelectorAll("[data-toggle=add-like]");
+const addButtonsShoppingCart = document.querySelectorAll("[data-toggle=add-shopping-cart]");
+const shoppingCart = document.querySelector("#first");
+const likeIcon = document.querySelector("#first-like");
+const shoppingCartTwo =document.querySelector("#second");
+const iconFillSecond = document.querySelector("#second-fill");
+const iconFill = document.querySelector("#first-fill");
+const iconFillTwo = document.querySelector("#first-fill-like");
 const addLike = document.querySelector(".add-like"); 
 const addShoppingCart = document.querySelector(".add-shopping-cart"); 
 
@@ -51,6 +55,8 @@ dMenuToggle.addEventListener('click', (event) => {
     });
   });
 
+
+
 /* Смена иконок при клике на первой карточке */
   const clickIconShoppingCartToggle = (event) => {
     shoppingCart.classList.add("icon-remove");
@@ -62,20 +68,47 @@ dMenuToggle.addEventListener('click', (event) => {
     iconFillTwo.classList.add("icon-add-like");
   }
 
-  
-  addLike.addEventListener('click', (event) => {
-    event.preventDefault();
-    clickIconLikeToggle();
+
+  addButtonsLike.forEach((addLike) => {
+    addLike.addEventListener('click', (event) => {
+      event.preventDefault();
+      clickIconLikeToggle();
+    });
   });
 
-
-
-  addShoppingCart.addEventListener('click', (event) => {
-    event.preventDefault();
-    clickIconShoppingCartToggle();
+  addButtonsShoppingCart.forEach((addShoppingCart) => {
+    addShoppingCart.addEventListener('click', (event) => {
+      event.preventDefault();
+      clickIconShoppingCartToggle();
+    });
   });
+
 
  /* Смена иконок при клике на второй карточке */ 
+
+ const clickIconShoppingCartToggle2 = (event) => {
+  shoppingCartTwo.classList.add("icon-remove-2");
+  iconFillSecond.classList.add("icon-add-2");
+}
+
+const clickIconLikeToggle2 = (event) => {
+  likeIcon.classList.add("icon-remove-like-2");
+  iconFillTwo.classList.add("icon-add-like-2");
+}
+
+addButtonsLike.forEach((addLike) => {
+  addLike.addEventListener('click', (event) => {
+    event.preventDefault();
+    clickIconLikeToggle2();
+  });
+});
+
+addButtonsShoppingCart.forEach((addShoppingCart) => {
+  addShoppingCart.addEventListener('click', (event) => {
+    event.preventDefault();
+    clickIconShoppingCartToggle2();
+  });
+});
 
 let currentModal;  //текущее модальное окно
 let modalDialog;   //белое диалоговое окно

@@ -400,23 +400,23 @@
                     <p class="price">29 900 ₽</p>
                   </div>
                   <div class="add">
-                    <div class="add-shopping-cart">
-                      <svg class="shopping-cart-2-icon">
+                    <button type="submit" class="add-shopping-cart" data-toggle="add-shopping-cart">
+                      <svg class="shopping-cart-2-icon" id="first">
                         <use href="img/sprite.svg#shopping-cart-2"></use>
                       </svg>
-                      <svg class="shopping-cart-2-icon icon-fill">
+                      <svg class="shopping-cart-2-icon icon-fill" id="first-fill">
                         <use href="img/sprite.svg#shopping-cart"></use>
                       </svg>
-                    </div>
+                    </button>
 
-                    <div class="add-like">
-                      <svg class="like-icon-2">
+                    <button type="submit" class="add-like" data-toggle="add-like">
+                      <svg class="like-icon-2" id="first-like">
                         <use href="img/sprite.svg#like-2"></use>
                       </svg>
-                      <svg class="like-icon-2 icon-fill-2">
+                      <svg class="like-icon-2 icon-fill-2" id="first-fill-like">
                         <use href="img/sprite.svg#like-fill"></use>
                       </svg>
-                    </div>
+                    </button>
                   </div>
                 </div>
   
@@ -482,23 +482,24 @@
                     <p class="price">29 900 ₽</p>
                   </div>
                   <div class="add">
-                    <div class="add-shopping-cart">
-                      <svg class="shopping-cart-2-icon">
+                    <button type="submit" class="add-shopping-cart" data-toggle="add-shopping-cart">
+                      <svg class="shopping-cart-2-icon" id="second">
                         <use href="img/sprite.svg#shopping-cart-2"></use>
                       </svg>
-                      <svg class="shopping-cart-2-icon icon-fill">
-                        <use href="img/sprite.svg#shopping-cart-fill"></use>
+                      <svg class="shopping-cart-2-icon" id="fill-second">
+                        <use href="img/sprite.svg#shopping-cart"></use>
                       </svg>
-                    </div>
+                    </button>
 
-                    <div class="add-like">
-                      <svg class="like-icon-2">
+                    <button type="submit" class="add-like"
+                    data-toggle="add-like">
+                      <svg class="like-icon-2" id="second-like">
                         <use href="img/sprite.svg#like-2"></use>
                       </svg>
-                      <svg class="like-icon-2 icon-fill-2">
+                      <svg class="like-icon-2 icon-fill-2" id="second-fill-like">
                         <use href="img/sprite.svg#like-fill"></use>
                       </svg>
-                    </div>
+                    </button>
                   </div>
                 </div>
   

@@ -775,8 +775,10 @@ body {
   margin-right: .625rem;
   width: 2.5rem;
   height: 2.5rem;
+  background-color: #fff;
   border: 1.3px solid #eaebed;
   border-radius: 100%;
+  cursor: pointer;
 }
 
 .add-shopping-cart-icon {
@@ -796,8 +798,10 @@ body {
   justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
+  background-color: #fff;
   border: 1.3px solid #eaebed;
   border-radius: 100%;
+  cursor: pointer;
 }
 
 .card-button {
@@ -1578,20 +1582,39 @@ input[type=text]::-ms-reveal {  display: none; width : 0;height: 0; }
   display: none;
 }
 
-.icon-remove {
+#fill-second {
   display: none;
 }
 
-.icon-remove-like {
+.icon-remove,
+.icon-remove-2 {
   display: none;
 }
 
-.icon-add {
+.icon-remove-like,
+.icon-remove-like-2 {
+  display: none;
+}
+
+.icon-add,
+.icon-add-2 {
   display: block;
 }
 
-.icon-add-like {
+.icon-add-like,
+.icon-add-like-2 {
   display: block;
+}
+
+.youtube-img,
+.telegram-img {
+  width: 7.6875rem;
+  height: 2.8125rem;
+}
+
+.pay-img {
+  width: 2.1875rem;
+  height: 1.5rem;
 }
 
 @media (min-width: 992px) {
@@ -1636,6 +1659,42 @@ input[type=text]::-ms-reveal {  display: none; width : 0;height: 0; }
   .add-shopping-cart:hover,
   .add-like:hover {
     border-color: #8439ff;
+  }
+
+  .cta-form-button:hover {
+    background-color: #8439ff;
+  }
+
+  .footer-button:hover {
+    border: 1px solid #6f73ee;
+    color: #8439ff;
+    border-radius: .3125rem;
+  }
+
+  .buyers-item-link:hover,
+  .catalog-item-link:hover,
+  .contacts-item-link:hover,
+  .request-a-call-link:hover {
+    color: #8439ff;
+  }
+
+  .google-play-img:hover,
+  .app-store-img:hover,
+  .vk-img:hover,
+  .youtube-img:hover,
+  .telegram-img:hover {
+    border: 1px solid rgba(93, 108, 123, 0.33);
+    border-radius: .3125rem;
+  }
+
+  .pay-img:hover {
+    border: 1px solid rgba(93, 108, 123, 0.33);
+    border-radius: .3125rem;
+  }
+
+  .policy-list-item-link:hover {
+    color: #8439ff;
+    text-decoration: underline;
   }
 
 }
@@ -2101,6 +2160,7 @@ input[type=text]::-ms-reveal {  display: none; width : 0;height: 0; }
   .dropdown-tg-icon {
     width: 1rem;
     height: 1rem;
+    fill:#5d6c7b;
   }
 
   .dropdown-menu-toggle {
@@ -2396,6 +2456,8 @@ input[type=text]::-ms-reveal {  display: none; width : 0;height: 0; }
     width: 28.1875rem;
     height: 22.375rem;
     margin-left: -14.375rem;
+    object-fit: cover;
+    object-position: center -2rem;
   }
 
   .section-study-content {
@@ -2522,9 +2584,11 @@ input[type=text]::-ms-reveal {  display: none; width : 0;height: 0; }
 
   .section-study-img {
     width: 22.1875rem;
-    height: 16.375rem;
+    height: 18.375rem;
     right: 50%;
     margin-left: -11.1875rem;
+    object-fit: cover;
+    object-position: center -1.5rem;
   }
 
   .section-study-content {
