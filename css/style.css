@@ -1574,37 +1574,7 @@ input::-webkit-search-results-decoration { display: none; }
 input[type=text]::-ms-clear {  display: none; width : 0;height: 0; }
 input[type=text]::-ms-reveal {  display: none; width : 0;height: 0; }
 
-.icon-fill {
-  display: none;
-}
 
-.icon-fill-2 {
-  display: none;
-}
-
-#fill-second {
-  display: none;
-}
-
-.icon-remove,
-.icon-remove-2 {
-  display: none;
-}
-
-.icon-remove-like,
-.icon-remove-like-2 {
-  display: none;
-}
-
-.icon-add,
-.icon-add-2 {
-  display: block;
-}
-
-.icon-add-like,
-.icon-add-like-2 {
-  display: block;
-}
 
 .youtube-img,
 .telegram-img {
