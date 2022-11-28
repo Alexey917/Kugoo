@@ -37,7 +37,6 @@
             <li class="navbar-list-item">
               <a href="#" class="navbar-list-item-link" data-toggle="modal" data-target="#feedback-modal">Заказать звонок</a>
             </li>
-            <ul class="navbar-social-list">
               <li class="navbar-social-list-item">
                 <a href="#" class="viber-link">
                   <svg class="viber-icon">
@@ -59,7 +58,6 @@
                   </svg>
                 </a>
               </li>
-            </ul>
             <li class="navbar-list-item navbar-phone">
               <a href="tel:+78005055461" class="navbar-list-item-link navbar-phone-link">+7 (800) 505-54-61</a>
             </li>
@@ -109,7 +107,7 @@
                 <a href="#" data-toggle="dropdown" class="dropdown-list-item-link">Баланс</a>
               </li>
               <li class="dropdown-list-item">
-                <a href="#" data-toggle="dropdown" class="dropdown-list-item-link">Избранное</a>
+                <a href="#footer" data-toggle="dropdown" class="dropdown-list-item-link">Избранное</a>
               </li>
               <li class="dropdown-list-item ">
                 <a href="#" data-toggle="dropdown" class="dropdown-list-item-link">Корзина</a>
@@ -342,7 +340,7 @@
         <div class="available-models-wrapper">
           <h2 class="available-models-title">Сейчас для тест-драйва и обучения<br>доступны следующие модели</h2>
           <div class="available-models-content">
-            <a href="#" class="card">
+            <div class="card">
               <div class="card-content">
                 <div class="card-header">
                   <div class="card-top">
@@ -410,9 +408,9 @@
                   <span class="card-button-text">Записаться на тест-драйв</span>
                 </button>
               </div>
-            </a>
+            </div>
 
-            <a href="#" class="card">
+            <div class="card">
               <div class="card-content">
                 <div class="card-header">
                   <div class="card-top">
@@ -480,9 +478,9 @@
                   <span class="card-button-text">Записаться на тест-драйв</span>
                 </button>
               </div>
-            </a>
+            </div>
 
-            <a href="#" class="card">
+            <div class="card">
               <div class="card-content">
                 <div class="card-header">
                   <div class="card-top">
@@ -550,9 +548,9 @@
                   <span class="card-button-text">Записаться на тест-драйв</span>
                 </button>
               </div>
-            </a>
+            </div>
 
-            <a href="#" class="card">
+            <div class="card">
               <div class="card-content">
                 <div class="card-header">
                   <div class="card-top">
@@ -620,7 +618,7 @@
                   <span class="card-button-text">Записаться на тест-драйв</span>
                 </button>
               </div>
-            </a>
+            </div>
           </div>
         </div>
       </div>
@@ -649,7 +647,7 @@
 
             <div class="cta-form-footer">
               <label class="container-label">
-                <input type="checkbox" id="terms" class="input-checkbox" name="checkbox">
+                <input type="checkbox" class="input-checkbox" name="checkbox">
                 <span class="checkmark">
                 </span>
               </label>
@@ -666,7 +664,7 @@
     </section>
     <!-- /.section-сta -->
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="leave-email">
         <div class="container">
           <div class="footer-form-wrapper">

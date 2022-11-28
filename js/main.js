@@ -37,7 +37,7 @@ dMenuToggle.addEventListener("click", (event) => {
 
 choiceLink.forEach((a) => {
   a.addEventListener("click", (event) => {
-    event.preventDefault();
+    // event.preventDefault();
     closeMenu();
   });
 });
@@ -45,22 +45,18 @@ choiceLink.forEach((a) => {
 const btnShoppingCart = document.querySelectorAll(".add-shopping-cart");
 const btnLike = document.querySelectorAll(".add-like");
 
-/*btnShoppingCart.forEach((btnItem, index) => {
-  btnItem.addEventListener("click", (event) => {
-    event.preventDefault();
-    /*btnShoppingCart.forEach((btnItem) => {
-      btnItem.classList.remove("add-shopping-cart-active");
-    });
-    btnItem.classList.add("add-shopping-cart-active");
-  });
-});*/
-
+/* Перебираем все кноки с классом add-shopping-cart */
 btnShoppingCart.forEach((btnItem, index) => {
+  /* Каждой кнопке вешаем событие клика */
   btnItem.addEventListener("click", (event) => {
+    /* уберется перезагрузка страницы при клике */
     event.preventDefault();
+    /* Если данная кнопка содержит класс add-shopping-cart-active, то выполнится следующее*/
     if (btnItem.classList.contains("add-shopping-cart-active")) {
+      /* у данной кнопки удалить класс add-shopping-cart-active*/
       btnItem.classList.remove("add-shopping-cart-active");
     } else {
+      /* иначе, добавить add-shopping-cart-active*/
       btnItem.classList.add("add-shopping-cart-active");
     }
   });
@@ -76,34 +72,6 @@ btnLike.forEach((btnItem, index) => {
     }
   });
 });
-
-/* Смена иконок при клике на первой карточке 
-  const clickIconShoppingCartToggle = (event) => {
-    shoppingCart.classList.add("icon-remove");
-    iconFill.classList.add("icon-add");
-  }
-
-  const clickIconLikeToggle = (event) => {
-    likeIcon.classList.add("icon-remove-like");
-    iconFillTwo.classList.add("icon-add-like");
-  }
-
-
-  addButtonsLike.forEach((addLike) => {
-    addLike.addEventListener('click', (event) => {
-      event.preventDefault();
-      clickIconLikeToggle();
-    });
-  });
-
-  addButtonsShoppingCart.forEach((addShoppingCart) => {
-    addShoppingCart.addEventListener('click', (event) => {
-      event.preventDefault();
-      clickIconShoppingCartToggle();
-    });
-  });*/
-
-/* Смена иконок при клике на второй карточке */
 
 let currentModal; //текущее модальное окно
 let modalDialog; //белое диалоговое окно
