@@ -780,6 +780,25 @@ body {
   border: 1.3px solid #eaebed;
   border-radius: 100%;
   cursor: pointer;
+  background-image: url("../img/bg-shopping-cart.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.add-shopping-cart-active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.625rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #fff;
+  border: 1.3px solid #eaebed;
+  border-radius: 100%;
+  cursor: pointer;
+  background-image: url("../img/bg-shopping-cart-active.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .add-shopping-cart-icon {
@@ -810,6 +829,24 @@ body {
   border: 1.3px solid #eaebed;
   border-radius: 100%;
   cursor: pointer;
+  background-image: url("../img/heart.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.add-like-active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #fff;
+  border: 1.3px solid #eaebed;
+  border-radius: 100%;
+  cursor: pointer;
+  background-image: url("../img/heart-fill.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .card-button {

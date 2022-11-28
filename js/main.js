@@ -43,17 +43,33 @@ choiceLink.forEach((a) => {
 });
 
 const btnShoppingCart = document.querySelectorAll(".add-shopping-cart");
-const iconShoppingCart = document.querySelector(".shopping-cart-2-icon");
-const shoppingCartOn = document.querySelector(".shopping-cart-switch");
-const shoppingCartOff = document.querySelector(".shopping-cart-2-icon");
+const btnLike = document.querySelectorAll(".add-like");
+
+/*btnShoppingCart.forEach((btnItem, index) => {
+  btnItem.addEventListener("click", (event) => {
+    event.preventDefault();
+    /*btnShoppingCart.forEach((btnItem) => {
+      btnItem.classList.remove("add-shopping-cart-active");
+    });
+    btnItem.classList.add("add-shopping-cart-active");
+  });
+});*/
 
 btnShoppingCart.forEach((btnItem, index) => {
   btnItem.addEventListener("click", (event) => {
     event.preventDefault();
-    btnShoppingCart.forEach((btnItem) => {
-      btnItem.classList.remove("shopping-cart-2-icon");
-    });
-    btnItem.classList.add("shopping-cart-switch");
+    if (btnItem.classList.contains("add-shopping-cart-active")) {
+      btnItem.classList.remove("add-shopping-cart-active");
+    } else {
+      btnItem.classList.add("add-shopping-cart-active");
+    }
+  });
+});
+
+btnLike.forEach((btnItem, index) => {
+  btnItem.addEventListener("click", (event) => {
+    event.preventDefault();
+    btnItem.classList.add("add-like-active");
   });
 });
 
