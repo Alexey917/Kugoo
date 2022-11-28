@@ -687,22 +687,24 @@
 
       <div class="container">
         <div class="footer-info">
-          <ul class="catalog">
+          <div class="catalog-info">
             <h3 class="catalog-title">Каталог товаров</h3>
-            <li class="catalog-item">
-              <a href="#" class="catalog-item-link">Электросамокаты</a>
-            </li>
-            <li class="catalog-item">
-              <a href="#" class="catalog-item-link">Электроскутеры</a>
-            </li>
-            <li class="catalog-item">
-              <a href="#" class="catalog-item-link">Электровелосипеды</a>
-            </li>
-            <li class="catalog-item">
-              <a href="#" class="catalog-item-link">Электровелосипеды</a>
-            </li>
-          </ul>
-          <!-- /.catalog -->
+            <ul class="catalog">
+              <li class="catalog-item">
+                <a href="#" class="catalog-item-link">Электросамокаты</a>
+              </li>
+              <li class="catalog-item">
+                <a href="#" class="catalog-item-link">Электроскутеры</a>
+              </li>
+              <li class="catalog-item">
+                <a href="#" class="catalog-item-link">Электровелосипеды</a>
+              </li>
+              <li class="catalog-item">
+                <a href="#" class="catalog-item-link">Электровелосипеды</a>
+              </li>
+            </ul>
+            <!-- /.catalog -->
+          </div>
 
           <div class="buyers-info">
             <h3 class="buyers-title">Покупателям</h3>

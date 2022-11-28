@@ -1248,7 +1248,7 @@ label.modal-label {
 }
 
 .contacts-item {
-  margin-bottom: 0.1375rem;
+  margin-bottom: 0.3375rem;
 }
 
 .contacts-item-link {
@@ -1645,6 +1645,11 @@ input[type="text"]::-ms-reveal {
   display: none;
 }
 
+.catalog-info {
+  margin-top: 1rem;
+  margin-left: 0.2rem;
+}
+
 @media (min-width: 992px) {
   .navbar-list-item-link:hover,
   .shopping-cart-list-item-link:hover {
@@ -1954,6 +1959,10 @@ input[type="text"]::-ms-reveal {
   .online-chat {
     margin-left: 0;
   }
+
+  .catalog-title {
+    margin-left: 15.2rem;
+  }
 }
 
 @media (max-width: 992px) {
@@ -2099,6 +2108,10 @@ input[type="text"]::-ms-reveal {
   .notify-text + .just-validate-error-label {
     top: 288px;
     right: 368px;
+  }
+
+  .catalog-title {
+    margin-left: 0;
   }
 }
 
