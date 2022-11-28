@@ -69,7 +69,11 @@ btnShoppingCart.forEach((btnItem, index) => {
 btnLike.forEach((btnItem, index) => {
   btnItem.addEventListener("click", (event) => {
     event.preventDefault();
-    btnItem.classList.add("add-like-active");
+    if (btnItem.classList.contains("add-like-active")) {
+      btnItem.classList.remove("add-like-active");
+    } else {
+      btnItem.classList.add("add-like-active");
+    }
   });
 });
 
