@@ -73,14 +73,14 @@
         <div class="navbar-content">
           <a href="./" class="logo">Kugoo</a>
 
-          <button class="navbar-button">
+          <a href="#" class="navbar-button">
             <div class="button-menu">
               <div class="button-line"></div>
               <div class="button-line"></div>
               <div class="button-line button-line-3"></div>
             </div>
             <span class="button-text">Каталог</span>
-          </button>
+          </a>
   
           <div class="navbar-form">
             <input type="search" placeholder=" " name="search"
@@ -126,33 +126,31 @@
               <li class="dropdown-list-item">
                 <a href="tel:+78005055461" data-toggle="dropdown" class="dropdown-list-item-link">+7 (800) 505-54-61</a>
               </li>
-              <hr class="dropdown-seporator">
-              <ul class="dropdown-social-list">
-                <li class="dropdown-social-list-item">
-                  <a href="#" data-toggle="dropdown" class="viber-link">
-                    <svg class="dropdown-viber-icon">
-                      <use href="img/sprite.svg#viber"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="dropdown-social-list-item">
-                  <a href="#" data-toggle="dropdown" class="whatsapp-link">
-                    <svg class="dropdown-whatsapp-icon">
-                      <use href="img/sprite.svg#whatsapp"></use>
-                    </svg>
-                  </a>
-                </li>
-            
-                <li class="dropdown-social-list-item">
-                  <a href="#"  data-toggle="dropdown" class="tg-link">
-                    <svg class="dropdown-tg-icon">
-                      <use href="img/sprite.svg#tg"></use>
-                    </svg>
-                  </a>
-                </li>
               </ul>
-                
-            </ul>
+              <ul class="dropdown-social-list">
+              <li class="dropdown-social-list-item">
+                <a href="#" data-toggle="dropdown" class="viber-link">
+                  <svg class="dropdown-viber-icon">
+                     <use href="img/sprite.svg#viber"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="dropdown-social-list-item">
+                <a href="#" data-toggle="dropdown" class="whatsapp-link">
+                  <svg class="dropdown-whatsapp-icon">
+                    <use href="img/sprite.svg#whatsapp"></use>
+                    </svg>
+                </a>
+              </li>
+            
+              <li class="dropdown-social-list-item">
+                <a href="#"  data-toggle="dropdown" class="tg-link">
+                  <svg class="dropdown-tg-icon">
+                    <use href="img/sprite.svg#tg"></use>
+                  </svg>
+                </a>
+              </li>
+              </ul>
           </div>
 
           
@@ -253,7 +251,7 @@
           <picture>
             <source type="image/webp" srcset="img/suitable-modal-image.webp">
             <source type="image/jpeg" srcset="img/suitable-modal-image.jpg">
-            <img  class="suitable-modal-img" src="img/suitable-modal-image.jpg">
+            <img  class="suitable-modal-img" src="img/suitable-modal-image.jpg" alt="suitable-modal-image">
           </picture>
           <div class="suitable-modal-content">
             <h2 class="suitable-modal-title">Определите максимально подходящую вам модель<br> не теоретически, а на практике</h2>
@@ -296,7 +294,7 @@
           <picture>
             <source type="image/webp" srcset="img/section-study-image.webp">
             <source type="image/jpeg" srcset="img/section-study-image.jpg">
-            <img  class="section-study-img" src="img/section-study-image.jpg">
+            <img  class="section-study-img" src="img/section-study-image.jpg" alt="section-study-image">
           </picture>
           <div class="section-study-content">
             <h2 class="section-study-title">Научим правильной<br> и безопасной езде в городе вас или вашего ребенка</h2>
@@ -360,7 +358,7 @@
                     <picture>
                       <source type="image/webp" srcset="img/Kick-scooter.webp">
                       <source type="image/jpeg" srcset="img/Kick-scooter.png">
-                      <img  class="card-img" src="img/Kick-scooter.png">
+                      <img  class="card-img" src="img/Kick-scooter.png" alt="kick-scooter">
                     </picture>
                   </div>
                 </div>
@@ -430,7 +428,7 @@
                     <picture>
                       <source type="image/webp" srcset="img/Kick-scooter.webp">
                       <source type="image/jpeg" srcset="img/Kick-scooter.png">
-                      <img  class="card-img" src="img/Kick-scooter.png">
+                      <img  class="card-img" src="img/Kick-scooter.png" alt="kick-scooter">
                     </picture>
                   </div>
                 </div>
@@ -500,7 +498,7 @@
                     <picture>
                       <source type="image/webp" srcset="img/Kick-scooter.webp">
                       <source type="image/jpeg" srcset="img/Kick-scooter.png">
-                      <img  class="card-img" src="img/Kick-scooter.png">
+                      <img  class="card-img" src="img/Kick-scooter.png" alt="kick-scooter">
                     </picture>
                   </div>
                 </div>
@@ -570,7 +568,7 @@
                     <picture>
                       <source type="image/webp" srcset="img/Kick-scooter.webp">
                       <source type="image/jpeg" srcset="img/Kick-scooter.png">
-                      <img  class="card-img" src="img/Kick-scooter.png">
+                      <img  class="card-img" src="img/Kick-scooter.png" alt="kick-scooter">
                     </picture>
                   </div>
                 </div>

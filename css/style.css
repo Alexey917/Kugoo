@@ -70,6 +70,10 @@ body {
   padding-left: 1.875rem;
 }
 
+.navbar-social-list-item:nth-child(4) {
+  margin-left: 1.85rem;
+}
+
 .navbar-social-list-item:not(:last-child) {
   margin-right: 0.5313rem;
 }
@@ -77,7 +81,7 @@ body {
 .navbar-phone {
   display: flex;
   justify-content: flex-end;
-  flex-basis: 68.1%;
+  flex-basis: 67.3%;
 }
 
 .search-icon {
@@ -140,6 +144,7 @@ body {
   border: 1.5px solid #6f73ee;
   border-radius: 0.3125rem;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .button-text {
@@ -2116,34 +2121,34 @@ input[type="text"]::-ms-reveal {
 
   .is-open {
     display: flex;
-  }
 
-  .dropdown-menu-list {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     list-style: none;
 
     position: absolute;
-    top: 2rem;
+    top: 3rem;
     right: -3rem;
     z-index: 3;
     width: 13.75rem;
-
-    padding: 0.5rem;
     background-color: #ffffff;
-    border-radius: 0.625rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 0.625rem;
   }
 
   .dropdown-menu-list {
-    flex-direction: column;
-    justify-content: center;
     list-style: none;
+    padding: 0.5rem;
+    margin-bottom: 0;
   }
 
   .dropdown-list-item {
     padding: 0.5rem 1.2rem;
+  }
+
+  .dropdown-list-item:last-child {
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid rgba(236, 243, 255, 1);
   }
 
   .dropdown-list-item-input {
@@ -2152,8 +2157,11 @@ input[type="text"]::-ms-reveal {
 
   .dropdown-social-list {
     padding: 0;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
     list-style: none;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
   }
@@ -2165,12 +2173,6 @@ input[type="text"]::-ms-reveal {
     line-height: 1.25rem;
     color: #282739;
     text-decoration: none;
-  }
-
-  .dropdown-seporator {
-    width: 100%;
-    color: rgba(236, 243, 255, 1);
-    opacity: 0.33;
   }
 
   .dropdown-viber-icon,
@@ -2260,7 +2262,7 @@ input[type="text"]::-ms-reveal {
     margin-right: 1.9375rem;
   }
 
-  .dropdown-menu-list {
+  .is-open {
     right: -1rem;
   }
 
@@ -2354,7 +2356,7 @@ input[type="text"]::-ms-reveal {
 }
 
 @media (max-width: 600px) {
-  .dropdown-menu-list {
+  .is-open {
     right: -1.4rem;
   }
 }
@@ -2443,7 +2445,7 @@ input[type="text"]::-ms-reveal {
     justify-content: center;
   }
 
-  .dropdown-menu-list {
+  .is-open {
     right: 7.6rem;
   }
 
@@ -2653,5 +2655,11 @@ input[type="text"]::-ms-reveal {
   .modal-notify-text + .just-validate-error-label {
     top: 129px;
     right: 132px;
+  }
+}
+
+@media (max-width: 375px) {
+  .is-open {
+    right: 2.6rem;
   }
 }
