@@ -6,47 +6,56 @@ const iconToggleTwo = document.querySelector(".dropdown-menu-line-2");
 const iconToggleThree = document.querySelector(".dropdown-menu-line-3");
 const iconClose = document.querySelector(".close-icon");
 
-
-
 const openMenu = (event) => {
   menu.classList.add("is-open");
   dMenuToggle.classList.add("close-menu");
-  document.body.style.overflow = "hidden;"
+  document.body.style.overflow = "hidden;";
   iconToggle.style.display = "none";
   iconToggleTwo.style.display = "none";
   iconToggleThree.style.display = "none";
   iconClose.style.display = "block";
-}
+};
 
 const closeMenu = (event) => {
   menu.classList.remove("is-open");
   dMenuToggle.classList.remove("close-menu");
-  document.body.style.overflow = "hidden;"
+  document.body.style.overflow = "hidden;";
   iconToggle.style.display = "block";
   iconToggleTwo.style.display = "block";
   iconToggleThree.style.display = "block";
   iconClose.style.display = "none";
- 
-}
+};
 
-dMenuToggle.addEventListener('click', (event) => {
+dMenuToggle.addEventListener("click", (event) => {
   event.preventDefault();
-  if(menu.classList.contains("is-open")) {
+  if (menu.classList.contains("is-open")) {
     closeMenu();
   } else {
-    openMenu();  
+    openMenu();
   }
 });
 
-
-  choiceLink.forEach((a) => {
-    a.addEventListener('click', (event) => {
-      event.preventDefault();
-      closeMenu();
-    });
+choiceLink.forEach((a) => {
+  a.addEventListener("click", (event) => {
+    event.preventDefault();
+    closeMenu();
   });
+});
 
+const btnShoppingCart = document.querySelectorAll(".add-shopping-cart");
+const iconShoppingCart = document.querySelector(".shopping-cart-2-icon");
+const shoppingCartOn = document.querySelector(".shopping-cart-switch");
+const shoppingCartOff = document.querySelector(".shopping-cart-2-icon");
 
+btnShoppingCart.forEach((btnItem, index) => {
+  btnItem.addEventListener("click", (event) => {
+    event.preventDefault();
+    btnShoppingCart.forEach((btnItem) => {
+      btnItem.classList.remove("shopping-cart-2-icon");
+    });
+    btnItem.classList.add("shopping-cart-switch");
+  });
+});
 
 /* Смена иконок при клике на первой карточке 
   const clickIconShoppingCartToggle = (event) => {
@@ -74,126 +83,126 @@ dMenuToggle.addEventListener('click', (event) => {
     });
   });*/
 
+/* Смена иконок при клике на второй карточке */
 
- /* Смена иконок при клике на второй карточке */ 
-
-
-let currentModal;  //текущее модальное окно
-let modalDialog;   //белое диалоговое окно
+let currentModal; //текущее модальное окно
+let modalDialog; //белое диалоговое окно
 
 const modalButtons = document.querySelectorAll("[data-toggle=modal]");
 modalButtons.forEach((button) => {
   /*клик по переключателю*/
-  button.addEventListener("click", (event) => {  
+  button.addEventListener("click", (event) => {
     event.preventDefault();
-    /*определяем текущее открытое окно*/ 
+    /*определяем текущее открытое окно*/
     currentModal = document.querySelector(button.dataset.target);
     /*открываем текущее окно*/
     currentModal.classList.toggle("modal-is-open");
-    /*назначаем диалоговое окно*/ 
+    /*назначаем диалоговое окно*/
     modalDialog = currentModal.querySelector(".modal-dialog");
-    /*отслеживаем клик по окну и по пустым областям*/ 
+    /*отслеживаем клик по окну и по пустым областям*/
     currentModal.addEventListener("click", (event) => {
-      /*если клик в пустую область (не диалог)*/ 
-      if(!event.composedPath().includes(modalDialog)) {
-        /*закрываем окно*/ 
+      /*если клик в пустую область (не диалог)*/
+      if (!event.composedPath().includes(modalDialog)) {
+        /*закрываем окно*/
         currentModal.classList.remove("modal-is-open");
       }
     });
   });
 });
 
-/*ловим событие нажатия на кнопку*/ 
+/*ловим событие нажатия на кнопку*/
 document.addEventListener("keyup", (event) => {
-  /*проверяем, что это кнопка esc и текущее окно открыто*/ 
-  if(event.key == "Escape" && currentModal.classList.contains("modal-is-open")) {
-    /*закрываем текущее окно*/ 
+  /*проверяем, что это кнопка esc и текущее окно открыто*/
+  if (
+    event.key == "Escape" &&
+    currentModal.classList.contains("modal-is-open")
+  ) {
+    /*закрываем текущее окно*/
     currentModal.classList.toggle("modal-is-open");
   }
 });
 
-const forms = document.querySelectorAll(".form");  //собираем все формы
-  forms.forEach((form) => {
-    const validation = new JustValidate(form, {
-      errorFieldCssClass: 'is-invalid',
-  }); 
-  validation
-  .addField('[name=userphone]', [
-    {
-      rule: 'required',
-      errorMessage: 'Укажите номер телефона',
-    },
-    {
-      rule: 'minLength',
-      value: 18,
-      errorMessage: "Некорректный номер телефона",
-    },
-  ])  
-  .addField('[name=checkbox]', [
-    {
-      rule: 'required',
-      errorMessage: 'Поставьте галочку',
-    },
-  ])  
-  .onSuccess((event) => {
-    const thisForm = event.target;  //определяем нашу форму
-    const formData = new FormData(thisForm); //данные из нашей формы
-    const ajaxSend = (formData) => {
-      fetch(thisForm.getAttribute("action"), {
-        method: thisForm.getAttribute("method"),
-        body: formData,
-      }).then((response) => {
-        if (response.ok) {
-        thisForm.reset();
-        } else {
-          alert("Ошибка. Текст ошибки: ".response.statusText);
-        }
-      });
-    };
-    ajaxSend(formData);
+const forms = document.querySelectorAll(".form"); //собираем все формы
+forms.forEach((form) => {
+  const validation = new JustValidate(form, {
+    errorFieldCssClass: "is-invalid",
   });
+  validation
+    .addField("[name=userphone]", [
+      {
+        rule: "required",
+        errorMessage: "Укажите номер телефона",
+      },
+      {
+        rule: "minLength",
+        value: 18,
+        errorMessage: "Некорректный номер телефона",
+      },
+    ])
+    .addField("[name=checkbox]", [
+      {
+        rule: "required",
+        errorMessage: "Поставьте галочку",
+      },
+    ])
+    .onSuccess((event) => {
+      const thisForm = event.target; //определяем нашу форму
+      const formData = new FormData(thisForm); //данные из нашей формы
+      const ajaxSend = (formData) => {
+        fetch(thisForm.getAttribute("action"), {
+          method: thisForm.getAttribute("method"),
+          body: formData,
+        }).then((response) => {
+          if (response.ok) {
+            thisForm.reset();
+          } else {
+            alert("Ошибка. Текст ошибки: ".response.statusText);
+          }
+        });
+      };
+      ajaxSend(formData);
+    });
 });
 
-const formEmail = document.querySelectorAll(".form-email");  //собираем все формы
+const formEmail = document.querySelectorAll(".form-email"); //собираем все формы
 formEmail.forEach((form) => {
-    const validation = new JustValidate(form, {
-      errorFieldCssClass: 'is-invalid',
-  }); 
-  validation
-  .addField('[name=useremail]', [
-    {
-      rule: 'required',
-      errorMessage: 'Укажите почту',
-    },
-    {
-      rule: 'minLength',
-      value: 10,
-      errorMessage: "Как минимум 10 символов",
-    },
-    {
-      rule: "email",
-      errorMessage: "Неверно введена почта",
-    },
-  ])  
-  .onSuccess((event) => {
-    const thisForm = event.target;  //определяем нашу форму
-    const formData = new FormData(thisForm); //данные из нашей формы
-    const ajaxSend = (formData) => {
-      fetch(thisForm.getAttribute("action"), {
-        method: thisForm.getAttribute("method"),
-        body: formData,
-      }).then((response) => {
-        if (response.ok) {
-        thisForm.reset();
-        } else {
-          alert("Ошибка. Текст ошибки: ".response.statusText);
-        }
-      });
-    };
-    ajaxSend(formData);
+  const validation = new JustValidate(form, {
+    errorFieldCssClass: "is-invalid",
   });
+  validation
+    .addField("[name=useremail]", [
+      {
+        rule: "required",
+        errorMessage: "Укажите почту",
+      },
+      {
+        rule: "minLength",
+        value: 10,
+        errorMessage: "Как минимум 10 символов",
+      },
+      {
+        rule: "email",
+        errorMessage: "Неверно введена почта",
+      },
+    ])
+    .onSuccess((event) => {
+      const thisForm = event.target; //определяем нашу форму
+      const formData = new FormData(thisForm); //данные из нашей формы
+      const ajaxSend = (formData) => {
+        fetch(thisForm.getAttribute("action"), {
+          method: thisForm.getAttribute("method"),
+          body: formData,
+        }).then((response) => {
+          if (response.ok) {
+            thisForm.reset();
+          } else {
+            alert("Ошибка. Текст ошибки: ".response.statusText);
+          }
+        });
+      };
+      ajaxSend(formData);
+    });
 });
-
 
 /* Создаем префикс +7, даже если вводят 8 или 9 */
 const prefixNumber = (str) => {
@@ -264,9 +273,3 @@ document.addEventListener("input", (e) => {
     input.value = result;
   }
 });
-
-
-
-
-
-

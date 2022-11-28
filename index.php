@@ -404,15 +404,28 @@
                       <svg class="shopping-cart-2-icon">
                         <use href="img/sprite.svg#shopping-cart-2"></use>
                       </svg>
-                      
+                      <svg class="shopping-cart-switch">
+                        <use href="img/sprite.svg#shopping-cart"></use>
+                      </svg>
                     </button>
+
+                    
+
+                   
 
                     <button type="submit" class="add-like">
                       <svg class="like-icon-2">
                         <use href="img/sprite.svg#like-2"></use>
                       </svg>
-                      
                     </button>
+
+                    <button type="submit" class="add-like active-like">
+                      <svg class="like-icon-2">
+                        <use href="img/sprite.svg#like-fill"></use>
+                      </svg>
+                    </button>
+
+
                   </div>
                 </div>
   
@@ -478,11 +491,13 @@
                     <p class="price">29 900 ₽</p>
                   </div>
                   <div class="add">
-                    <button type="submit" class="add-shopping-cart">
+                  <button type="submit" class="add-shopping-cart">
                       <svg class="shopping-cart-2-icon">
                         <use href="img/sprite.svg#shopping-cart-2"></use>
                       </svg>
-                      
+                      <svg class="shopping-cart-switch">
+                        <use href="img/sprite.svg#shopping-cart"></use>
+                      </svg>
                     </button>
 
                     <button type="submit" class="add-like">
