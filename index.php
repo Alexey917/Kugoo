@@ -101,28 +101,28 @@
                 </div>
               </li>
               <li class="dropdown-list-item">
-                <a href="#" data-toggle="dropdown" class="dropdown-list-item-link">Каталог</a>
+                <a href="#" data-dropdown="dropdown" class="dropdown-list-item-link">Каталог</a>
               </li>
               <li class="dropdown-list-item">
-                <a href="#" data-toggle="dropdown" class="dropdown-list-item-link">Баланс</a>
+                <a href="#" data-dropdown="dropdown" class="dropdown-list-item-link">Баланс</a>
               </li>
               <li class="dropdown-list-item">
-                <a href="#footer" data-toggle="dropdown" class="dropdown-list-item-link">Избранное</a>
+                <a href="#footer" data-dropdown="dropdown" class="dropdown-list-item-link">Избранное</a>
               </li>
               <li class="dropdown-list-item ">
-                <a href="#" data-toggle="dropdown" class="dropdown-list-item-link">Корзина</a>
+                <a href="#" data-dropdown="dropdown" class="dropdown-list-item-link">Корзина</a>
               </li>
               <li class="dropdown-list-item">
-                <a href="#" data-toggle="dropdown" class="dropdown-list-item-link">Сервис</a>
+                <a href="#" data-dropdown="dropdown" class="dropdown-list-item-link">Сервис</a>
               </li>
               <li class="dropdown-list-item">
-                <a href="#" data-toggle="dropdown" class="dropdown-list-item-link">Сотрудничество</a>
+                <a href="#" data-dropdown="dropdown" class="dropdown-list-item-link">Сотрудничество</a>
               </li>
               <li class="dropdown-list-item">
-                <a href="#" class="dropdown-list-item-link" data-toggle="modal" data-toggle="dropdown" data-target="#feedback-modal">Заказать звонок</a>
+                <a href="#" class="dropdown-list-item-link" data-toggle="modal" data-dropdown="dropdown" data-target="#feedback-modal">Заказать звонок</a>
               </li>
               <li class="dropdown-list-item">
-                <a href="tel:+78005055461" data-toggle="dropdown" class="dropdown-list-item-link">+7 (800) 505-54-61</a>
+                <a href="tel:+78005055461" data-dropdown="dropdown" class="dropdown-list-item-link">+7 (800) 505-54-61</a>
               </li>
               </ul>
               <ul class="dropdown-social-list">

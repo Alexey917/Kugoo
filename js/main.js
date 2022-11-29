@@ -1,6 +1,6 @@
 const dMenuToggle = document.querySelector(".dropdown-menu-toggle");
 const menu = document.querySelector(".dropdown-menu");
-const choiceLink = document.querySelectorAll("[data-toggle=dropdown]");
+const choiceLink = document.querySelectorAll("[data-dropdown=dropdown]");
 const iconToggle = document.querySelector(".dropdown-menu-line");
 const iconToggleTwo = document.querySelector(".dropdown-menu-line-2");
 const iconToggleThree = document.querySelector(".dropdown-menu-line-3");
